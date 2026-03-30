@@ -336,7 +336,7 @@ export const sourcesData: SourceDataType[] = [
     },
   },
   {
-    title: "Eau écomosisée",
+    title: "Eau économisée",
     description:
       "Base de données sur la consommation d’eau liée à différents produits.",
     icon: "droplet",
