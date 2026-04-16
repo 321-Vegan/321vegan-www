@@ -5,6 +5,7 @@ import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 import clsx from "clsx";
 import Link from "next/link";
 import Logo from "./Logo";
+import { campaigns } from "@/assets/campaigns";
 
 const menus = [
   { href: "/", label: "Accueil", childs: null },
@@ -21,6 +22,17 @@ const menus = [
       },
       { href: "/suivi-d-impact", label: "Suivi d'impact" },
       { href: "/partenaires", label: "Nos partenaires" },
+    ],
+  },
+  {
+    href: "/outil-signalement",
+    label: "Signalement",
+    childs: [
+      { href: "/outil-signalement", label: "Guide général" },
+      ...campaigns.map((c) => ({
+        href: `/outil-signalement/${c.slug}`,
+        label: c.navLabel,
+      })),
     ],
   },
   { href: "/contact", label: "Contact", childs: null },

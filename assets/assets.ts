@@ -53,6 +53,11 @@ export const sitemapData: SitmapDataType[] = [
   },
   { url: "/suivi-d-impact", label: "Suivi d'impact", category: "services" },
   { url: "/partenaires", label: "Partenaires", category: "services" },
+  {
+    url: "/outil-signalement",
+    label: "Outil de signalement",
+    category: "services",
+  },
   { url: "/contact", label: "Contact", category: "support" },
   {
     url: "/politique-de-confidentialite",
