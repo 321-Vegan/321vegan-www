@@ -21,7 +21,7 @@ const SignalementCampaignText = ({ text }: { text: string }) => {
         </h2>
         <p className="text-gray-600 leading-relaxed">
           Copiez ce texte et collez-le tel quel dans le champ de description du
-          formulaire Signal&nbsp;Conso.
+          formulaire Signal Conso.
         </p>
       </header>
 
