@@ -20,7 +20,7 @@ const baseSteps: Step[] = [
         >
           signal.conso.gouv.fr
         </a>{" "}
-        depuis votre navigateur. Vous n'avez pas besoin de créer de compte pour faire le signalement !<br/>Sélectionnez <strong>« Un produit en particulier »</strong> puis <strong>« C'est un aliment »</strong>.
+        depuis votre navigateur. Vous n&apos;avez pas besoin de créer de compte pour faire le signalement !<br/>Sélectionnez <strong>« Un produit en particulier »</strong> puis <strong>« C&apos;est un aliment »</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step1.jpg",
@@ -30,7 +30,7 @@ const baseSteps: Step[] = [
     title: "Première précision",
         description: (
       <>
-        Sélectionnez <strong> « Problème avec l'emballage ou l'étiquette »</strong>.
+        Sélectionnez <strong> « Problème avec l&apos;emballage ou l&apos;étiquette »</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step2.jpg",
@@ -50,7 +50,7 @@ const baseSteps: Step[] = [
     title: "Dernière précision",
     description: (
       <>
-        Sélectionnez <strong>« La composition »</strong> puis <strong> « Signaler un problème avec l'entreprise »</strong>.
+        Sélectionnez <strong>« La composition »</strong> puis <strong> « Signaler un problème avec l&apos;entreprise »</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step4.jpg",
@@ -60,7 +60,7 @@ const baseSteps: Step[] = [
     title: "Renseigner le produit",
     description: (
       <>
-       Entrez le code-barre du produit puis cliquez sur  <strong> « Rechercher »</strong>. Les informations du produit et de la marque vont s'afficher. <br/>Le code-barre pour cette campagne est le suivant : 
+       Entrez le code-barre du produit puis cliquez sur  <strong> « Rechercher »</strong>. Les informations du produit et de la marque vont s&apos;afficher. <br/>Le code-barre pour cette campagne est le suivant :
       </>
     ),
     screenshot: "/campaigns/guide/step5.jpg",

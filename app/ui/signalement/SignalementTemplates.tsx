@@ -82,7 +82,7 @@ const SignalementTemplates = () => {
       </div>
 
       <p className="mt-6 text-sm text-gray-500">
-        Vous pouvez adapter le modèle selon votre situation afin d'apporter plus de précisions. Un signalement précis et étayé a plus de chances d&apos;être
+        Vous pouvez adapter le modèle selon votre situation afin d&apos;apporter plus de précisions. Un signalement précis et étayé a plus de chances d&apos;être
         traité par la DGCCRF.
       </p>
     </section>

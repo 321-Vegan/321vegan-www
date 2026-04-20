@@ -14,7 +14,7 @@ const SignalementHero = () => {
       </h1>
 
       <p className="text-lg leading-relaxed text-gray-700">
-        Un produit affiché comme "vegan" qui contient des ingrédients animaux ?
+        Un produit affiché comme &ldquo;vegan&rdquo; qui contient des ingrédients animaux ?
         Une mention trompeuse sur l&apos;emballage ? Signal Conso est le
         service officiel de la répression des fraudes (DGCCRF) pour signaler ces
         problèmes. Ce guide vous accompagne étape par étape.

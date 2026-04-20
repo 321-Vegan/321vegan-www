@@ -1,4 +1,4 @@
-import { Camera, FileText, Hash, Store, Download } from "lucide-react";
+import { Camera, FileText, Hash } from "lucide-react";
 
 const items = [
   {
