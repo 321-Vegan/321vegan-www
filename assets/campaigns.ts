@@ -1,3 +1,6 @@
+import cordonsBleusRecto from "./campaigns/cordons-bleus/recto.png";
+import cordonsBleusIngredients from "./campaigns/cordons-bleus/ingredients.jpg";
+
 /**
  * Signal Conso campaigns.
  *
@@ -20,16 +23,9 @@ export type Campaign = {
   campaignTitle: string;
   /** Introductory paragraph explaining why this campaign exists */
   campaignIntro: string;
-  /**
-   * Photo of the product front (packaging with the false claim visible).
-   * Place the file in /public/campaigns/[slug]/ and reference it here.
-   * e.g. "/campaigns/mon-produit/recto.jpg"
-   */
+  /** Photo of the product front (packaging with the false claim visible). */
   photoProduct?: string;
-  /**
-   * Photo of the ingredient list.
-   * e.g. "/campaigns/mon-produit/ingredients.jpg"
-   */
+  /** Photo of the ingredient list. */
   photoIngredients?: string;
   /**
    * The exact text users must copy-paste into Signal Conso.
@@ -48,8 +44,8 @@ export const campaigns: Campaign[] = [
     campaignTitle: "Signalez les Cordons Bleus 'Végétal' de la marque Le Gaulois",
     campaignIntro:
       "Le packaging mentionne 'végétal', pourtant le produit contient des oeufs et du lait, ce qui est trompeur.",
-    photoProduct: "/campaigns/cordons-bleus/recto.png",
-    photoIngredients: "/campaigns/cordons-bleus/ingredients.jpg",
+    photoProduct: cordonsBleusRecto,
+    photoIngredients: cordonsBleusIngredients,
     campaignText: `Bonjour,
 
 Je souhaite signaler le produit « Cordons bleus végétal » de la marque Le Gaulois (code-barres : 3266980038991), disponible dans de nombreux magasins.

@@ -2,8 +2,18 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { Download } from "lucide-react";
 import CopyButton from "./CopyEanButton";
+import step1 from "@/assets/campaigns/guide/step1.webp";
+import step2 from "@/assets/campaigns/guide/step2.webp";
+import step3 from "@/assets/campaigns/guide/step3.webp";
+import step4 from "@/assets/campaigns/guide/step4.webp";
+import step5 from "@/assets/campaigns/guide/step5.webp";
+import step6 from "@/assets/campaigns/guide/step6.webp";
+import step7 from "@/assets/campaigns/guide/step7.webp";
+import step8 from "@/assets/campaigns/guide/step8.webp";
+import step9 from "@/assets/campaigns/guide/step9.webp";
+import step10 from "@/assets/campaigns/guide/step10.webp";
 
-type Step = { number: number; title: string; description: ReactNode; screenshot?: string };
+type Step = { number: number; title: string; description: ReactNode; screenshot?: Parameters<typeof Image>[0]["src"] };
 
 const baseSteps: Step[] = [
   {
@@ -23,17 +33,17 @@ const baseSteps: Step[] = [
         depuis votre navigateur. Vous n&apos;avez pas besoin de créer de compte pour faire le signalement&nbsp;!<br/>Sélectionnez <strong>&laquo;&nbsp;Un produit en particulier&nbsp;&raquo;</strong> puis <strong>&laquo;&nbsp;C&apos;est un aliment&nbsp;&raquo;</strong>.
       </>
     ),
-    screenshot: "/campaigns/guide/step1.jpg",
+    screenshot: step1,
   },
   {
     number: 2,
     title: "Première précision",
-        description: (
+    description: (
       <>
         Sélectionnez <strong>&laquo;&nbsp;Problème avec l&apos;emballage ou l&apos;étiquette&nbsp;&raquo;</strong>.
       </>
     ),
-    screenshot: "/campaigns/guide/step2.jpg",
+    screenshot: step2,
   },
   {
     number: 3,
@@ -43,7 +53,7 @@ const baseSteps: Step[] = [
         Sélectionnez <strong>&laquo;&nbsp;Informations trompeuses ou fausses&nbsp;&raquo;</strong>.
       </>
     ),
-    screenshot: "/campaigns/guide/step3.jpg",
+    screenshot: step3,
   },
   {
     number: 4,
@@ -53,8 +63,8 @@ const baseSteps: Step[] = [
         Sélectionnez <strong>&laquo;&nbsp;La composition&nbsp;&raquo;</strong> puis <strong>&laquo;&nbsp;Signaler un problème avec l&apos;entreprise&nbsp;&raquo;</strong>.
       </>
     ),
-    screenshot: "/campaigns/guide/step4.jpg",
-    },
+    screenshot: step4,
+  },
   {
     number: 5,
     title: "Renseigner le produit",
@@ -63,7 +73,7 @@ const baseSteps: Step[] = [
         Entrez le code-barre du produit puis cliquez sur <strong>&laquo;&nbsp;Rechercher&nbsp;&raquo;</strong>. Les informations du produit et de la marque vont s&apos;afficher. <br/>Le code-barre pour cette campagne est le suivant&nbsp;:
       </>
     ),
-    screenshot: "/campaigns/guide/step5.jpg",
+    screenshot: step5,
   },
   {
     number: 6,
@@ -73,36 +83,35 @@ const baseSteps: Step[] = [
         Pour la date du constat, vous pouvez laisser la date du jour. Pour la question &laquo;&nbsp;De quel produit s&apos;agit-il&nbsp;?&nbsp;&raquo; renseignez &laquo;&nbsp;Autres&nbsp;&raquo; avec &laquo;&nbsp;Produit préparé&nbsp;&raquo; ou une mention similaire. Enfin, vous pouvez utilisez le modèle de texte ou en écrire un vous-même&nbsp;!
       </>
     ),
-    screenshot: "/campaigns/guide/step6.jpg",
-
-    },
+    screenshot: step6,
+  },
   {
     number: 7,
     title: "Joindre des images",
     description:
       "Vous pouvez utilisez vos propres images du produit ou bien télécharger et utiliser celles du modèle (à télécharger en cliquant sur les boutons ci-dessous).",
-    screenshot: "/campaigns/guide/step7.jpg",
+    screenshot: step7,
   },
   {
     number: 8,
     title: "Coordonnées",
     description:
       "Renseignez vos coordonnées. Vous n'êtes pas obligé·e de donner votre numéro de téléphone ni de numéro de référence. Ensuite, vous pouvez choisir de communiquer ou non vos coordonnées à l'entreprise : à vous de voir !",
-    screenshot: "/campaigns/guide/step8.jpg",
+    screenshot: step8,
   },
   {
     number: 9,
     title: "Validation de d'email",
     description:
       "Vous allez recevoir un email avec un code, renseignez-le.",
-    screenshot: "/campaigns/guide/step9.jpg",
+    screenshot: step9,
   },
   {
     number: 10,
     title: "Récapitulatif et validation",
     description:
       "Vérifier les données du récapitulatif et validez. C'est terminé ! Merci beaucoup pour votre participation !",
-    screenshot: "/campaigns/guide/step10.jpg",
+    screenshot: step10,
   },
 ];
 
