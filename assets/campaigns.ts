@@ -53,6 +53,8 @@ Je souhaite signaler le produit « Cordons bleus végétal » de la marque Le Ga
 Ce produit affiche la mention 'Végétal'. Pourtant il contient du lait et des œufs : des ingrédients d'origine animale incompatible avec cette allégation.
 Cette mention trompeuse peut induire en erreur les consommateurs cherchant à éviter les produits d'origine animale.
 
+Cette pratique est susceptible de constituer une pratique commerciale trompeuse au sens de l'article L. 121-2, 2°, b) du Code de la consommation, en ce qu'elle repose sur une présentation de nature à induire en erreur le consommateur sur une caractéristique essentielle du produit : sa composition.
+
 Pièces jointes : photo du recto du produit, photo de la liste des ingrédients.
 
 Cordialement`,
