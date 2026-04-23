@@ -56,7 +56,7 @@ export const sitemapData: SitmapDataType[] = [
   {
     url: "/outil-signalement",
     label: "Outil de signalement",
-    category: "services",
+    category: "resources",
   },
   { url: "/contact", label: "Contact", category: "support" },
   {

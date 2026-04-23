@@ -54,7 +54,7 @@ export const campaigns: Campaign[] = [
 
 Je souhaite signaler le produit « Cordons bleus végétal » de la marque Le Gaulois (code-barres : 3266980038991), disponible dans de nombreux magasins.
 Ce produit affiche la mention 'Végétal'. Pourtant il contient du lait et des œufs : des ingrédients d'origine animale incompatible avec cette allégation.
-Cette mention trompeuse a déjà induit en erreur de nombreux consommateurs cherchant à éviter les produits d'origine animale.
+Cette mention trompeuse peut induire en erreur les consommateurs cherchant à éviter les produits d'origine animale.
 
 Pièces jointes : photo du recto du produit, photo de la liste des ingrédients.
 

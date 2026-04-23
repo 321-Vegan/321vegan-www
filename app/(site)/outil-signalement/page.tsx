@@ -7,7 +7,7 @@ import SignalementTemplates from "@/app/ui/signalement/SignalementTemplates";
 export const metadata: Metadata = {
   title: "Outil de signalement Signal Conso",
   description:
-    "Guide pas-à-pas pour signaler un produit sur Signal Conso. Modèles de texte prêts à copier, captures d'écran du processus et liste des éléments à préparer.",
+    "Guide pas-à-pas pour signaler un produit sur Signal Conso. Modèle de texte prêts à copier, captures d'écran du processus et liste des éléments à préparer.",
 };
 
 export default function Page() {

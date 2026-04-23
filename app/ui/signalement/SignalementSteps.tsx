@@ -20,7 +20,7 @@ const baseSteps: Step[] = [
         >
           signal.conso.gouv.fr
         </a>{" "}
-        depuis votre navigateur. Vous n&apos;avez pas besoin de créer de compte pour faire le signalement !<br/>Sélectionnez <strong>« Un produit en particulier »</strong> puis <strong>« C&apos;est un aliment »</strong>.
+        depuis votre navigateur. Vous n&apos;avez pas besoin de créer de compte pour faire le signalement&nbsp;!<br/>Sélectionnez <strong>&laquo;&nbsp;Un produit en particulier&nbsp;&raquo;</strong> puis <strong>&laquo;&nbsp;C&apos;est un aliment&nbsp;&raquo;</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step1.jpg",
@@ -30,7 +30,7 @@ const baseSteps: Step[] = [
     title: "Première précision",
         description: (
       <>
-        Sélectionnez <strong> « Problème avec l&apos;emballage ou l&apos;étiquette »</strong>.
+        Sélectionnez <strong>&laquo;&nbsp;Problème avec l&apos;emballage ou l&apos;étiquette&nbsp;&raquo;</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step2.jpg",
@@ -40,7 +40,7 @@ const baseSteps: Step[] = [
     title: "Deuxième précision",
     description: (
       <>
-        Sélectionnez <strong>« Informations trompeuses ou fausses »</strong>.
+        Sélectionnez <strong>&laquo;&nbsp;Informations trompeuses ou fausses&nbsp;&raquo;</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step3.jpg",
@@ -50,7 +50,7 @@ const baseSteps: Step[] = [
     title: "Dernière précision",
     description: (
       <>
-        Sélectionnez <strong>« La composition »</strong> puis <strong> « Signaler un problème avec l&apos;entreprise »</strong>.
+        Sélectionnez <strong>&laquo;&nbsp;La composition&nbsp;&raquo;</strong> puis <strong>&laquo;&nbsp;Signaler un problème avec l&apos;entreprise&nbsp;&raquo;</strong>.
       </>
     ),
     screenshot: "/campaigns/guide/step4.jpg",
@@ -60,7 +60,7 @@ const baseSteps: Step[] = [
     title: "Renseigner le produit",
     description: (
       <>
-       Entrez le code-barre du produit puis cliquez sur  <strong> « Rechercher »</strong>. Les informations du produit et de la marque vont s&apos;afficher. <br/>Le code-barre pour cette campagne est le suivant :
+        Entrez le code-barre du produit puis cliquez sur <strong>&laquo;&nbsp;Rechercher&nbsp;&raquo;</strong>. Les informations du produit et de la marque vont s&apos;afficher. <br/>Le code-barre pour cette campagne est le suivant&nbsp;:
       </>
     ),
     screenshot: "/campaigns/guide/step5.jpg",
@@ -68,8 +68,11 @@ const baseSteps: Step[] = [
   {
     number: 6,
     title: "Description du problème",
-    description:
-      "Pour la date du constat, vous pouvez laisser la date du jour. Pour la question « De quel produit s'agit-il ? » renseignez « Autres » avec « Produit préparé » ou une mention similaire. Enfin, vous pouvez utilisez le modèle de texte ou en écrire un vous-même !",
+    description: (
+      <>
+        Pour la date du constat, vous pouvez laisser la date du jour. Pour la question &laquo;&nbsp;De quel produit s&apos;agit-il&nbsp;?&nbsp;&raquo; renseignez &laquo;&nbsp;Autres&nbsp;&raquo; avec &laquo;&nbsp;Produit préparé&nbsp;&raquo; ou une mention similaire. Enfin, vous pouvez utilisez le modèle de texte ou en écrire un vous-même&nbsp;!
+      </>
+    ),
     screenshot: "/campaigns/guide/step6.jpg",
 
     },
@@ -106,13 +109,15 @@ const baseSteps: Step[] = [
 const StepScreenshot = ({ step, src }: { step: number; src?: string }) => {
   if (src) {
     return (
-      <Image
-        src={src}
-        alt={`Capture d'écran étape ${step}`}
-        width={1280}
-        height={800}
-        className="w-1/2 h-auto rounded-xl border border-gray-200"
-      />
+      <div className="w-full sm:w-3/4 mx-auto rounded-xl border border-gray-200 p-2 sm:p-6">
+        <Image
+          src={src}
+          alt={`Capture d'écran étape ${step}`}
+          width={1280}
+          height={800}
+          className="w-full h-auto rounded-lg block"
+        />
+      </div>
     );
   }
   return (
