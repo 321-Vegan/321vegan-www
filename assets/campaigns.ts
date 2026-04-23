@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import cordonsBleusRecto from "./campaigns/cordons-bleus/recto.png";
 import cordonsBleusIngredients from "./campaigns/cordons-bleus/ingredients.jpg";
 
@@ -24,9 +25,9 @@ export type Campaign = {
   /** Introductory paragraph explaining why this campaign exists */
   campaignIntro: string;
   /** Photo of the product front (packaging with the false claim visible). */
-  photoProduct?: string;
+  photoProduct?: StaticImageData;
   /** Photo of the ingredient list. */
-  photoIngredients?: string;
+  photoIngredients?: StaticImageData;
   /**
    * The exact text users must copy-paste into Signal Conso.
    * No placeholders — write the final, ready-to-use message.

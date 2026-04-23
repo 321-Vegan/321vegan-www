@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { Download } from "lucide-react";
 import CopyButton from "./CopyEanButton";
@@ -115,7 +115,7 @@ const baseSteps: Step[] = [
   },
 ];
 
-const StepScreenshot = ({ step, src }: { step: number; src?: string }) => {
+const StepScreenshot = ({ step, src }: { step: number; src?: Parameters<typeof Image>[0]["src"] }) => {
   if (src) {
     return (
       <div className="w-full sm:w-3/4 mx-auto rounded-xl border border-gray-200 p-2 sm:p-6">
@@ -140,8 +140,8 @@ const StepScreenshot = ({ step, src }: { step: number; src?: string }) => {
 type SignalementStepsProps = {
   ean?: string;
   campaignText?: string;
-  photoProduct?: string;
-  photoIngredients?: string;
+  photoProduct?: StaticImageData;
+  photoIngredients?: StaticImageData;
 };
 
 const SignalementSteps = ({ ean, campaignText, photoProduct, photoIngredients }: SignalementStepsProps) => {
@@ -178,7 +178,7 @@ const SignalementSteps = ({ ean, campaignText, photoProduct, photoIngredients }:
             <span className="flex flex-wrap gap-3 mt-2">
               {photoProduct && (
                 <a
-                  href={photoProduct}
+                  href={photoProduct.src}
                   download
                   className="inline-flex items-center gap-1 text-sm text-brand-600 hover:text-brand-700 font-medium transition-colors"
                 >
@@ -188,7 +188,7 @@ const SignalementSteps = ({ ean, campaignText, photoProduct, photoIngredients }:
               )}
               {photoIngredients && (
                 <a
-                  href={photoIngredients}
+                  href={photoIngredients.src}
                   download
                   className="inline-flex items-center gap-1 text-sm text-brand-600 hover:text-brand-700 font-medium transition-colors"
                 >
