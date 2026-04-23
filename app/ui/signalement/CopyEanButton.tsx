@@ -5,7 +5,7 @@ import { Copy, Check } from "lucide-react";
 import clsx from "clsx";
 
 type Props = {
-  text: string;
+  text: string | (() => string);
   display?: string;
   label?: string;
   variant?: "link" | "primary";
@@ -15,7 +15,7 @@ const CopyButton = ({ text, display, label = "Copier", variant = "link" }: Props
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(text);
+    await navigator.clipboard.writeText(typeof text === "function" ? text() : text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

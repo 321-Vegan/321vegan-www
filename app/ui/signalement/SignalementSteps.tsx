@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { Download } from "lucide-react";
 import CopyButton from "./CopyEanButton";
+import InlineLink from "@/app/ui/components/InlineLink";
 import step1 from "@/assets/campaigns/guide/step1.webp";
 import step2 from "@/assets/campaigns/guide/step2.webp";
 import step3 from "@/assets/campaigns/guide/step3.webp";
@@ -22,14 +23,9 @@ const baseSteps: Step[] = [
     description: (
       <>
         Rendez-vous sur{" "}
-        <a
-          href="https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-brand-600 underline underline-offset-2 hover:text-brand-700"
-        >
+        <InlineLink href="https://signal.conso.gouv.fr/fr/achat-magasin/faire-un-signalement" target="_blank" rel="noopener noreferrer">
           signal.conso.gouv.fr
-        </a>{" "}
+        </InlineLink>{" "}
         depuis votre navigateur. Vous n&apos;avez pas besoin de créer de compte pour faire le signalement&nbsp;!<br/>Sélectionnez <strong>&laquo;&nbsp;Un produit en particulier&nbsp;&raquo;</strong> puis <strong>&laquo;&nbsp;C&apos;est un aliment&nbsp;&raquo;</strong>.
       </>
     ),

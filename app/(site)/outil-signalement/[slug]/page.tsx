@@ -5,6 +5,7 @@ import SignalementCampaignHero from "@/app/ui/signalement/SignalementCampaignHer
 import SignalementCampaignText from "@/app/ui/signalement/SignalementCampaignText";
 import SignalementCampaignPhotos from "@/app/ui/signalement/SignalementCampaignPhotos";
 import SignalementSteps from "@/app/ui/signalement/SignalementSteps";
+import ShareCampaignBox from "@/app/ui/signalement/ShareCampaignBox";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -33,6 +34,7 @@ export default async function Page({ params }: Props) {
         <SignalementCampaignHero campaign={campaign} />
         <SignalementCampaignText text={campaign.campaignText} />
         <SignalementCampaignPhotos campaign={campaign} />
+        <ShareCampaignBox />
         <SignalementSteps
           ean={campaign.barcode}
           campaignText={campaign.campaignText}
