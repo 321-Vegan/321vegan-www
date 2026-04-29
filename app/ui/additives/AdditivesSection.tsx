@@ -95,6 +95,8 @@ const AdditivesSection = async () => {
           La base de données des additifs est construite à partir de{" "}
           <a
             href="https://github.com/isitvegan/isitvegan-web"
+            target="_blank"
+            rel="noopener noreferrer"
             className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-500 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-500 hover:text-white hover:-translate-y-1 focus:bg-brand-500 focus:text-white active:bg-brand-500 active:text-white transition-transform duration-300"
           >
             Is It Vegan&nbsp;?
