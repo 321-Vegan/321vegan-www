@@ -110,3 +110,42 @@ export type AdditiveDataType = {
   status: string;
   source: string;
 };
+
+export type CampaignDataType = {
+  /** URL segment: /outil-signalement/[slug] */
+  slug: string;
+  /** Short label shown in the navbar dropdown */
+  navLabel: string;
+  /** Full product name as shown on the packaging */
+  productName: string;
+  /** Brand / manufacturer name */
+  brand: string;
+  /** EAN barcode printed on the product */
+  barcode: string;
+  /** H1 displayed on the campaign page */
+  campaignTitle: string;
+  /** Introductory paragraph explaining why this campaign exists */
+  campaignIntro: string;
+  /** Photo of the product front (packaging with the false claim visible). */
+  photoProduct: StaticImageData;
+  /** Photo of the ingredient list. */
+  photoIngredients: StaticImageData;
+  /**
+   * The exact text users must copy-paste into Signal Conso.
+   * No placeholders — write the final, ready-to-use message.
+   */
+  campaignText: string;
+};
+
+export type SignalConsoChecklistDataType = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+export type SignalConsoTemplatesDataType = {
+  id: string;
+  label: string;
+  description: string;
+  text: string;
+};

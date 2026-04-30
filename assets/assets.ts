@@ -9,6 +9,8 @@ import {
   SocialNetworkLinksType,
   SourceDataType,
   TestimonialDataType,
+  SignalConsoChecklistDataType,
+  SignalConsoTemplatesDataType,
 } from "@/types/definitions";
 import mockupImpact from "./mockup-impact.webp";
 import mockupPartners from "./mockup-partners.webp";
@@ -53,6 +55,11 @@ export const sitemapData: SitmapDataType[] = [
   },
   { url: "/suivi-d-impact", label: "Suivi d'impact", category: "services" },
   { url: "/partenaires", label: "Partenaires", category: "services" },
+  {
+    url: "/outil-signalement",
+    label: "Outil de signalement",
+    category: "resources",
+  },
   { url: "/contact", label: "Contact", category: "support" },
   {
     url: "/politique-de-confidentialite",
@@ -424,4 +431,36 @@ export const cosmeticsSourcesData: string[] = [
   "https://www.leapingbunny.org/",
   "https://www.vegansociety.com/",
   "https://www.fondation-droit-animal.org/",
+];
+
+export const signalConsoChecklistData: SignalConsoChecklistDataType[] = [
+  {
+    icon: "camera",
+    title: "Photo recto du produit",
+    description:
+      "Une photo nette du packaging avec la mention trompeuse visible (ex.&nbsp;: logo &laquo;&nbsp;vegan&nbsp;&raquo;, texte &laquo;&nbsp;végétalien&nbsp;&raquo;, etc.).",
+  },
+  {
+    icon: "file-text",
+    title: "Photo des ingrédients",
+    description:
+      "Une photo lisible de la liste d'ingrédients (généralement située au dos ou sous le produit). L'ingrédient problématique doit être identifiable.",
+  },
+  {
+    icon: "barcode",
+    title: "Code-barres du produit",
+    description:
+      "Il est recommandé d'avoir le code-barres du produit pour effectuer le signalement.",
+  },
+];
+
+export const signalConsoTemplatesData: SignalConsoTemplatesDataType[] = [
+  {
+    id: "fausse-mention",
+    label:
+      "Mention &laquo;&nbsp;vegan&nbsp;&raquo;, &laquo;&nbsp;végétal&nbsp;&raquo; ou &laquo;&nbsp;plant based&nbsp;&raquo; trompeuse",
+    description:
+      "Modèle de texte à utiliser quand un produit contient des ingrédients d'origine animale mais affiche un logo ou une mention vegan/végétalien, indique végétal ou plant based, etc.",
+    text: `Bonjour,\n\nJe souhaite signaler le produit [NOM DU PRODUIT] de la marque [MARQUE] (code-barres : [CODE-BARRES]), disponible à [NOM DU MAGASIN].\nCe produit affiche une mention « végétal » sur son emballage. Cependant, sa liste d'ingrédients contient [INGRÉDIENT ANIMAL], un ingrédient d'origine animale incompatible avec cette allégation.\nCette mention trompeuse peut induire en erreur les consommateurs cherchant à éviter les produits d'origine animale.\n\nPièces jointes : photo du recto du produit (mention visible), photo de la liste des ingrédients.\n\nCordialement`,
+  },
 ];
