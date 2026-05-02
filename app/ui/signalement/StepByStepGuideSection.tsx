@@ -130,7 +130,7 @@ const stepsData: StepDataType[] = [
         question &laquo;&nbsp;De quel produit s&apos;agit-il&nbsp;?&nbsp;&raquo;
         renseignez &laquo;&nbsp;Autres&nbsp;&raquo; avec &laquo;&nbsp;Produit
         préparé&nbsp;&raquo; ou une mention similaire. Enfin, vous pouvez
-        utilisez le modèle de texte ou en écrire un vous-même&nbsp;!
+        utiliser le modèle de texte ou en écrire un vous-mêmes&nbsp;!
       </>
     ),
     screenshot: step6,
@@ -139,7 +139,7 @@ const stepsData: StepDataType[] = [
     title: "Joindre des images",
     description: (
       <>
-        Vous pouvez utilisez vos propres images du produit ou bien télécharger
+        Vous pouvez utiliser vos propres images du produit ou bien télécharger
         et utiliser celles de la campagne.
       </>
     ),
@@ -166,7 +166,7 @@ const stepsData: StepDataType[] = [
     title: "Récapitulatif et validation",
     description: (
       <>
-        Vérifier les données du récapitulatif et validez. C&apos;est
+        Vérifiez les données du récapitulatif et validez. C&apos;est
         terminé&nbsp;! Merci beaucoup pour votre participation&nbsp;!
       </>
     ),

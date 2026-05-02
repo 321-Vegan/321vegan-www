@@ -61,7 +61,7 @@ const Page = () => {
                     les produits qui le sont
                   </strong>
                   . L&apos;application est{" "}
-                  <strong>entièrement gratuite et sans publicités</strong>.
+                  <strong>entièrement gratuite et sans publicité</strong>.
                 </p>
                 <section className="lg:mt-auto">
                   <AppStoresCta />
