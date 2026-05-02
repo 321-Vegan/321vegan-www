@@ -74,7 +74,7 @@ export default async function Page({ params }: Props) {
               Éléments pour le signalement&nbsp;:
             </h2>
             <p className="md:text-justify text-balance mb-16 leading-relaxed">
-              Télécharchez les photos du produit et copiez le texte pour le
+              Téléchargez les photos du produit et copiez le texte pour le
               signalement.
             </p>
 
@@ -82,7 +82,7 @@ export default async function Page({ params }: Props) {
               <CampaignDl campaign={campaign} />
               <hr className="border-0 border-b border-brand-500 mt-10 mb-8 mx-8" />
               <p className="mb-6 text-brand-900 leading-relaxed">
-                Télécharchez les photos du produit, copiez le texte pour le
+                Téléchargez les photos du produit, copiez le texte pour le
                 signalement, puis rendez-vous sur le site web
                 signal.conso.gouv.fr depuis votre navigateur et renseignez le
                 formulaire en suivant notre guide pas-à-pas. Vous n&apos;avez
