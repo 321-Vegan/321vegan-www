@@ -1,6 +1,6 @@
 import { CampaignDataType } from "@/types/definitions";
 import cordonsBleusRecto from "./campaigns/cordons-bleus/recto.png";
-import cordonsBleusIngredients from "./campaigns/cordons-bleus/ingredients.jpg";
+import cordonsBleusIngredients from "./campaigns/cordons-bleus/ingredients.png";
 
 /**
  * Signal Conso campaigns.
