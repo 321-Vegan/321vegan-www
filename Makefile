@@ -26,8 +26,8 @@ renew:  ## Build, renew volumes and run Docker Compose services for development 
 	docker compose up --renew-anon-volumes development
 
 install-prod:  ## Build and run Docker Compose services for production stage
-	docker compose build --no-cache production
-	docker compose up --force-recreate production
+	docker-compose build --no-cache production
+	docker-compose up --force-recreate production -d
 
 prod:  ## Build and run Docker Compose services for production stage
 	docker compose up -d production
