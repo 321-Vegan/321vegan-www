@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { campaigns } from "@/assets/campaigns";
 import { Markup } from "interweave";
-import { Megaphone } from "lucide-react";
 
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
+import Tag from "@/app/ui/components/Tag";
 import CampaignDl from "@/app/ui/signalement/CampaignDl";
 import SignalConsoBtns from "@/app/ui/signalement/SignalConsoBtns";
 import CampaignShareCta from "@/app/ui/signalement/CampaignShareCta";
@@ -35,10 +35,9 @@ export default async function Page({ params }: Props) {
     <div className="w-full flex flex-col items-center justify-center gap-4 pt-16 space-y-24 lg:px-[12%]">
       <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 py-24 mx-auto xl:px-0 mt-5">
         <header>
-          <div className="inline-flex items-center gap-2 text-sm font-medium text-orange-600 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 w-fit mb-6">
-            <Megaphone className="size-4" aria-hidden="true" />
+          <Tag icon="megaphone" color="orange" wrapperClass="mb-6">
             Campagne en cours
-          </div>
+          </Tag>
 
           <h1 className="mb-1 text-5xl text-brand-600 font-extrabold leading-tight">
             Campagne &laquo;&nbsp;{campaign.navLabel}&nbsp;&raquo;

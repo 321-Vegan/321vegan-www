@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import { Flag } from "lucide-react";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
+import Tag from "@/app/ui/components/Tag";
 import StepByStepGuideSection from "@/app/ui/signalement/StepByStepGuideSection";
 import SignalConsoBtns from "@/app/ui/signalement/SignalConsoBtns";
 import SignalementChecklist from "@/app/ui/signalement/SignalementChecklist";
@@ -18,10 +18,9 @@ export default function Page() {
     <div className="w-full flex flex-col items-center justify-center gap-4 pt-16 space-y-24 lg:px-[12%]">
       <div className="container relative flex flex-col justify-between h-full max-w-6xl px-10 py-24 mx-auto xl:px-0 mt-5">
         <header>
-          <div className="inline-flex items-center gap-2 text-sm font-medium text-orange-600 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 w-fit mb-6">
-            <Flag className="size-4" aria-hidden="true" />
+          <Tag icon="flag" color="orange" wrapperClass="mb-6">
             Outil militant
-          </div>
+          </Tag>
 
           <h1 className="mb-1 text-5xl text-brand-600 font-extrabold leading-tight">
             Guide général Signal Conso

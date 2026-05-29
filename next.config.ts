@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
     "*.localhost",
     "192.168.1.5",
     "*.192.168.1.5",
+    "192.168.1.6",
+    "*.192.168.1.6",
   ],
   images: {
     unoptimized: true,
@@ -45,6 +47,14 @@ const nextConfig: NextConfig = {
       {
         source: "/sources",
         destination: "/impact",
+      },
+      {
+        source: "/ressources",
+        destination: "/resources",
+      },
+      {
+        source: "/ressources/:category",
+        destination: "/resources/:category",
       },
       {
         source: "/politique-de-confidentialite",

@@ -25,6 +25,7 @@ const Header = () => {
           width={915}
           height={915}
           className="rounded-full w-40 h-40 object-cover object-top"
+          loading="eager"
         />
       </MotionDiv>
       <MotionH1
