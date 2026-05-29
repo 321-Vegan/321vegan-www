@@ -149,3 +149,20 @@ export type SignalConsoTemplatesDataType = {
   description: string;
   text: string;
 };
+
+export type ResourceCategoriesDataType = {
+  id: number;
+  name: string;
+  icon: string;
+  slug: string;
+  description: string;
+  color: string;
+};
+
+export type ResourcesDataType = {
+  category_slug: string;
+  name: string;
+  description: string;
+  link: string;
+  logo?: StaticImageData;
+};

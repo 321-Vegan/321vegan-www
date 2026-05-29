@@ -11,6 +11,7 @@ const Logo = ({ className, ...props }: LogoProps) => {
       width={915}
       height={915}
       className={className}
+      loading="eager"
       {...props}
     />
   );

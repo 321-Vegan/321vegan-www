@@ -9,7 +9,7 @@ polyfill();
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000"
+    process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000",
   ),
   title: {
     template: "%s | 321 Vegan",
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html lang="fr" className="scroll-smooth" data-scroll-behavior="smooth">
       <body
         className={`${inter.className} antialiased leading-8 overflow-x-hidden bg-white text-brand-950 `}
       >

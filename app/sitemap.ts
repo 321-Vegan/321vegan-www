@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { sitemapData } from "@/assets/assets";
+import { sitemapData, resourceCategoriesData } from "@/assets/assets";
+
 import { campaigns } from "@/assets/campaigns";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -15,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/outil-signalement/${c.slug}`,
   }));
 
+  const routeResourceCategories = resourceCategoriesData.map((c) => ({
+    url: `${baseUrl}/ressources/${c.slug}`,
+  }));
+
   return [
     {
       url: `${baseUrl}`,
@@ -24,5 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...pagesMapped,
     ...routeCampaigns,
+    ...routeResourceCategories,
   ];
 }

@@ -1,11 +1,12 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import { resourceCategoriesData } from "@/assets/assets";
+import { campaigns } from "@/assets/campaigns";
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 import clsx from "clsx";
 import Link from "next/link";
 import Logo from "./Logo";
-import { campaigns } from "@/assets/campaigns";
 
 const menus = [
   { href: "/", label: "Accueil", childs: null },
@@ -32,6 +33,17 @@ const menus = [
       ...campaigns.map((c) => ({
         href: `/outil-signalement/${c.slug}`,
         label: c.navLabel,
+      })),
+    ],
+  },
+  {
+    href: "/ressources",
+    label: "Ressources",
+    childs: [
+      { href: "/ressources", label: "Toutes les catégories" },
+      ...resourceCategoriesData.map((c) => ({
+        href: `/ressources/${c.slug}`,
+        label: c.name,
       })),
     ],
   },
@@ -84,7 +96,7 @@ const Navbar = () => {
         "w-full fixed px-5 lg:px-8 x1:px-[8%] py-4 flex items-center justify-between z-50",
         {
           "bg-white lg:opacity-90 backdrop-blur-lg shadow-sm": isScrolling,
-        }
+        },
       )}
     >
       <Link href="/" className="cursor-pointer inline-flex items-center gap-1">
@@ -131,9 +143,9 @@ const Navbar = () => {
                     "inline-flex items-center gap-2 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] list-none marker:hidden",
                     {
                       "after:scale-x-100": childs.some(
-                        (child) => pathname === child.href
+                        (child) => pathname === child.href,
                       ),
-                    }
+                    },
                   )}
                 >
                   {label}
@@ -150,7 +162,7 @@ const Navbar = () => {
                             "pb-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]",
                             {
                               "after:scale-x-100": pathname === child.href,
-                            }
+                            },
                           )}
                           onClick={handleCloseMenu}
                         >
@@ -168,7 +180,7 @@ const Navbar = () => {
                   "pb-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)]",
                   {
                     "after:scale-x-100": pathname === href,
-                  }
+                  },
                 )}
                 onClick={handleCloseMenu}
               >
@@ -190,9 +202,9 @@ const Navbar = () => {
                     "inline-flex items-center gap-2 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100",
                     {
                       "after:scale-x-100": childs.some(
-                        (child) => pathname === child.href
+                        (child) => pathname === child.href,
                       ),
-                    }
+                    },
                   )}
                 >
                   {label}
@@ -206,7 +218,7 @@ const Navbar = () => {
                           "pb-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100",
                           {
                             "after:scale-x-100": pathname === child.href,
-                          }
+                          },
                         )}
                         href={child.href}
                       >
@@ -222,7 +234,7 @@ const Navbar = () => {
                   "pb-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:w-full after:origin-bottom after:scale-x-0 after:bg-brand-500 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100",
                   {
                     "after:scale-x-100": pathname === href,
-                  }
+                  },
                 )}
                 href={href}
               >
