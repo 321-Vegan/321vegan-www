@@ -1,6 +1,8 @@
 import axios from "axios";
 import { API_URL } from "@/constants/index";
 
+export const dynamic = "force-dynamic";
+
 const axiosInstance = axios.create({
   baseURL: API_URL,
   withCredentials: true,
