@@ -17,7 +17,7 @@ const FlierDownloadCard = () => {
   const previewSrc = `/kit/affiche-321vegan-${size.toLowerCase()}.png`;
 
   return (
-    <article className="flex flex-col gap-5 border border-brand-100 rounded-lg p-6 hover:shadow-md transition-shadow h-full">
+    <div className="flex flex-col gap-5 border border-brand-50 rounded-lg p-6 shadow-sm h-full hover:-translate-y-1 transition-all duration-500">
       <div className="rounded-md bg-brand-50 flex items-center justify-center overflow-hidden">
         <Image
           src={previewSrc}
@@ -82,13 +82,13 @@ const FlierDownloadCard = () => {
         <a
           href={href}
           download
-          className="mt-auto inline-flex items-center justify-center gap-2 bg-brand-600 text-white text-sm px-4 py-2 rounded hover:bg-brand-700 transition-colors"
+          className="flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium leading-7 shadow-sm relative z-0 text-white bg-brand-600 after:bg-brand-600 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-lg hover:after:scale-x-125 hover:after:scale-y-150 hover:after:opacity-0 hover:after:transition hover:after:duration-500 cursor-pointer w-full mt-auto"
         >
           <Download className="size-4" aria-hidden="true" />
           Télécharger ({size} · {format})
         </a>
       </div>
-    </article>
+    </div>
   );
 };
 

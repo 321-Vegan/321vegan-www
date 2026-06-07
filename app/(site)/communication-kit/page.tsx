@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import { socialNetworkLinks } from "@/assets/assets";
 import Link from "next/link";
-import TemplateMessageForm from "@/app/ui/signalement/TemplateMessageForm";
+import ContactUsCta from "@/app/ui/components/ContactUsCta";
 import FlierDownloadCard from "@/app/ui/kit/FlierDownloadCard";
 import LogoCard from "@/app/ui/kit/LogoCard";
 import ColorPalette from "@/app/ui/kit/ColorPalette";
-import { socialNetworkLinks } from "@/assets/assets";
+import TextCard from "@/app/ui/kit/TextCard";
 
 export const metadata: Metadata = {
   title: "Kit de communication",
@@ -16,7 +17,7 @@ const brandColors = [
   { hex: "#166534", name: "Vert principal" },
   { hex: "#4CAF71", name: "Vert secondaire" },
   { hex: "#F5F5F4", name: "Blanc", light: true },
-  { hex: "#FFDE59", name: "Moutarde", light: true},
+  { hex: "#FFDE59", name: "Moutarde", light: true },
   { hex: "#1C1917", name: "Noir" },
 ];
 
@@ -68,44 +69,59 @@ export default function Page() {
         </header>
 
         <main className="flex flex-col gap-16">
-          <div>
+          <section>
+            <h2 className="mb-12 text-lg font-merriweather">
+              Vous souhaitez partagez l&apos;appli&nbsp;? Notre kit de
+              communication est à votre disposition
+            </h2>
+
             <p className="leading-relaxed mb-2">
-              Vous souhaitez parler de l&apos;appli ? Merci infiniment&nbsp;!
-              C&apos;est <strong>grâce à vous que ce projet grandit</strong> et
-              aide, jour après jour, de plus en plus de personnes à consommer
-              végétal et éthique. Voici quelques documents et textes que vous
-              pouvez utiliser pour communiquer sur le projet.
+              Vous souhaitez parler de l&apos;appli&nbsp;? Merci
+              infiniment&nbsp;! C&apos;est{" "}
+              <strong>
+                grâce à vous que ce projet grandit et aide, jour après jour, de
+                plus en plus de personnes à consommer végétal et éthique
+              </strong>
+              . Voici quelques documents et textes que vous pouvez utiliser pour
+              communiquer sur le projet.
             </p>
             <p className="leading-relaxed">
               N&apos;hésitez pas à{" "}
               <strong>
-                m&apos;envoyer vos plus belles photos de ces visuels en
-                situation réelle
+                nous envoyer vos plus belles photos de ces visuels en situation
+                réelle
               </strong>{" "}
               (sur instagram{" "}
               <a
-                href="https://instagram.com/321vegan.app"
+                href={socialNetworkLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-600 underline"
+                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
               >
                 @321vegan.app
               </a>{" "}
               ou via le{" "}
-              <Link href="/contact" className="text-brand-600 underline">
+              <Link
+                href="/contact"
+                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
+              >
                 formulaire de contact
               </Link>
               )&nbsp;!
             </p>
-          </div>
+          </section>
 
-          <section aria-labelledby="visuels-heading">
+          <section aria-labelledby="visuels-heading" className="scroll-mt-20">
             <h2
               id="visuels-heading"
-              className="text-2xl font-semibold text-brand-600 mb-6"
+              className="text-2xl font-semibold text-brand-600 my-8 font-merriweather"
             >
               Visuels et logos
             </h2>
+            <p className="leading-relaxed mb-6 text-gray-600">
+              Téléchargez nos visuels prêts à l&apos;emploi et notre logo dans
+              la version qu&apos;il vous faut.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="sm:row-span-2 h-full">
                 <FlierDownloadCard />
@@ -118,26 +134,29 @@ export default function Page() {
               D&apos;autres visuels arriveront bientôt (template de story, GIF,
               ...)&nbsp;! Si vous souhaitez participer à leur création,
               n&apos;hésitez pas à{" "}
-              <Link href="/contact" className="text-brand-600 underline">
-                me contacter
+              <Link
+                href="/contact"
+                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
+              >
+                nous contacter
               </Link>{" "}
-              ou à rejoindre notre{" "}
+              ou à{" "}
               <a
                 href={socialNetworkLinks.discord}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-600 underline"
+                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
               >
-                serveur Discord
+                rejoindre notre serveur Discord
               </a>
               .
             </p>
           </section>
 
-          <section aria-labelledby="palette-heading">
+          <section aria-labelledby="palette-heading" className="scroll-mt-20">
             <h2
               id="palette-heading"
-              className="text-2xl font-semibold text-brand-600 mb-2"
+              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-merriweather"
             >
               Palette de couleurs
             </h2>
@@ -151,44 +170,42 @@ export default function Page() {
             </div>
           </section>
 
-          <section aria-labelledby="textes-heading">
+          <section aria-labelledby="textes-heading" className="scroll-mt-20">
             <h2
               id="textes-heading"
-              className="text-2xl font-semibold text-brand-600 mb-2"
+              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-merriweather"
             >
               Textes à copier-coller
             </h2>
             <p className="leading-relaxed mb-8 text-gray-600">
               Vous pouvez utiliser ces textes pour présenter 321 Vegan sur les
-              réseaux sociaux, par email ou dans vos communications. Modifiez-les
-              avant de les copier si besoin.
+              réseaux sociaux, par email ou dans vos communications. Vous pouvez
+              bien sûr les modifier à votre guise si besoin.
             </p>
 
             <div className="flex flex-col lg:flex-row gap-6">
-              <div className="bg-brand-50 rounded-lg p-6 flex-1 flex flex-col h-[480px]">
-                <h3 className="font-semibold text-lg mb-6 shrink-0">
-                  Texte court{" "}
-                  <span className="text-sm font-normal text-brand-500">
-                    (réseaux sociaux)
-                  </span>
-                </h3>
-                <div className="flex-1 min-h-0">
-                  <TemplateMessageForm text={shortText} fillHeight />
-                </div>
-              </div>
-
-              <div className="bg-brand-50 rounded-lg p-6 flex-1 flex flex-col h-[480px]">
-                <h3 className="font-semibold text-lg mb-6 shrink-0">
-                  Texte long{" "}
-                  <span className="text-sm font-normal text-brand-500">
-                    (email, newsletter, présentation)
-                  </span>
-                </h3>
-                <div className="flex-1 min-h-0">
-                  <TemplateMessageForm text={longText} fillHeight />
-                </div>
-              </div>
+              <TextCard
+                text={shortText}
+                title="Texte court"
+                description="(réseaux sociaux)"
+              />
+              <TextCard
+                text={longText}
+                title="Texte long"
+                description="(email, newsletter, présentation)"
+              />
             </div>
+          </section>
+
+          <section>
+            <ContactUsCta
+              title="Vous souhaitez devenir partenaire&nbsp;?"
+              btnColor="bg-brand-600 after:bg-brand-600"
+              wrapperClass="mt-16"
+            >
+              Contactez-nous pour rejoindre notre listes de partenaires et faire
+              bénéficiez d&apos;avantages à la communauté.
+            </ContactUsCta>
           </section>
         </main>
       </div>

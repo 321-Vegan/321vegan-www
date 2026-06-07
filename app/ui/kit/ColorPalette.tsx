@@ -14,7 +14,7 @@ const ColorPalette = ({ hex, name, light = false }: ColorPaletteProps) => {
   return (
     <button
       onClick={() => copyToClipboard(hex)}
-      className="group flex flex-col overflow-hidden rounded-lg border border-brand-100 hover:shadow-md transition-shadow cursor-pointer w-full"
+      className="group flex flex-col overflow-hidden rounded-lg border border-brand-50 shadow-sm hover:-translate-y-1 transition-all duration-500 cursor-pointer w-full"
     >
       <div
         className="h-24 w-full flex items-center justify-center"
@@ -22,14 +22,12 @@ const ColorPalette = ({ hex, name, light = false }: ColorPaletteProps) => {
       >
         {isCopied ? (
           <Check
-            className="size-5 opacity-70"
-            style={{ color: light ? "#1C1917" : "#F5F5F4" }}
+            className={`size-5 opacity-70 ${light ? "" : "text-white"}`}
             aria-hidden="true"
           />
         ) : (
           <Copy
-            className="size-5 opacity-0 group-hover:opacity-60 transition-opacity"
-            style={{ color: light ? "#1C1917" : "#F5F5F4" }}
+            className={`size-5 opacity-0 group-hover:opacity-60 transition-opacity ${light ? "" : "text-white"}`}
             aria-hidden="true"
           />
         )}
