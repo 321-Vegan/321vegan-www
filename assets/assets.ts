@@ -96,6 +96,11 @@ export const sitemapData: SitmapDataType[] = [
     label: "Outil de signalement",
     category: "resources",
   },
+  {
+    url: "/kit-de-communication",
+    label: "Kit de communication",
+    category: "general",
+  },
   { url: "/contact", label: "Contact", category: "support" },
   {
     url: "/politique-de-confidentialite",

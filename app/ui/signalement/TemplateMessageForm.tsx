@@ -7,6 +7,7 @@ type RecordType = Record<string, string>;
 
 interface TemplateMessageFormProps {
   text: string;
+  fillHeight?: boolean;
 }
 
 const PLACEHOLDER_RE = /\[([^\]]+)\]/g;
@@ -22,7 +23,10 @@ function applyFields(text: string, fields: RecordType): string {
   );
 }
 
-const TemplateMessageForm = ({ text }: TemplateMessageFormProps) => {
+const TemplateMessageForm = ({
+  text,
+  fillHeight = false,
+}: TemplateMessageFormProps) => {
   const placeholders = extractPlaceholders(text);
   const [fields, setFields] = useState<RecordType>({});
   const [customText, setCustomText] = useState<string>("");
@@ -36,13 +40,21 @@ const TemplateMessageForm = ({ text }: TemplateMessageFormProps) => {
   };
 
   return (
-    <form className="grid md:grid-cols-2 gap-8 md:w-full">
-      <div className="col-span-full">
-        {placeholders.length > 0
-          ? "Remplissez les champs ci-dessous et éditer"
-          : "Éditer"}{" "}
-        le texte pour personnaliser le message à copier.
-      </div>
+    <form
+      className={clsx(
+        fillHeight
+          ? "flex flex-col h-full gap-4"
+          : "grid md:grid-cols-2 gap-8 md:w-full",
+      )}
+    >
+      {!fillHeight && (
+        <div className="col-span-full">
+          {placeholders.length > 0
+            ? "Remplissez les champs ci-dessous et éditer"
+            : "Éditez"}{" "}
+          le texte pour personnaliser le message à copier.
+        </div>
+      )}
       {placeholders.length > 0 && (
         <div className="grid gap-8">
           {placeholders.map((key, index) => (
@@ -66,6 +78,7 @@ const TemplateMessageForm = ({ text }: TemplateMessageFormProps) => {
         </div>
       )}
       <textarea
+        aria-label="Texte à copier"
         value={displayedText}
         onChange={(e) => setCustomText(e.target.value || computedText)}
         rows={displayedText.split("\n").length + 1}
@@ -73,12 +86,13 @@ const TemplateMessageForm = ({ text }: TemplateMessageFormProps) => {
         className={clsx(
           "block py-2.5 px-0 text-sm text-brand-700 bg-transparent border-0 border-b border-brand-700 appearance-none focus:outline-none focus:ring-0 focus:border-brand-500",
           {
-            "col-span-full": placeholders.length === 0,
+            "col-span-full": !fillHeight && placeholders.length === 0,
+            "flex-1 min-h-0 overflow-y-auto resize-none": fillHeight,
           },
         )}
       />
 
-      <div className="col-span-full">
+      <div className={clsx({ "col-span-full": !fillHeight })}>
         <CopyButton
           text={displayedText}
           className="flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium leading-7 shadow-sm relative z-0 text-white bg-brand-700 after:bg-brand-700 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-lg hover:after:scale-x-125 hover:after:scale-y-150 hover:after:opacity-0 hover:after:transition hover:after:duration-500 cursor-pointer w-full"

@@ -64,6 +64,10 @@ const nextConfig: NextConfig = {
         source: "/mentions-legales",
         destination: "/terms",
       },
+      {
+        source: "/kit-de-communication",
+        destination: "/communication-kit",
+      },
     ];
   },
 };
