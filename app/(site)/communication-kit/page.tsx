@@ -16,7 +16,7 @@ const brandColors = [
   { hex: "#166534", name: "Vert principal" },
   { hex: "#4CAF71", name: "Vert secondaire" },
   { hex: "#F5F5F4", name: "Blanc", light: true },
-  { hex: "#FFDE59", name: "Moutarde" },
+  { hex: "#FFDE59", name: "Moutarde", light: true},
   { hex: "#1C1917", name: "Noir" },
 ];
 
