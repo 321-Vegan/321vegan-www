@@ -47,6 +47,7 @@ const menus = [
       })),
     ],
   },
+  { href: "/kit-de-communication", label: "Kit communication", childs: null },
   { href: "/contact", label: "Contact", childs: null },
 ];
 
