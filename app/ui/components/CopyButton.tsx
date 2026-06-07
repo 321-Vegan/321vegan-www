@@ -27,7 +27,6 @@ const CopyButton = ({ children, text, ...props }: CopyButtonProps) => {
       disabled={isCopying || error !== ""}
       onClick={handleCopy}
       {...props}
-      aria-label={"Copier"}
     >
       {isCopied && children ? "Copié" : children}
       <Icon

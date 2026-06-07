@@ -78,6 +78,7 @@ const TemplateMessageForm = ({
         </div>
       )}
       <textarea
+        aria-label="Texte à copier"
         value={displayedText}
         onChange={(e) => setCustomText(e.target.value || computedText)}
         rows={displayedText.split("\n").length + 1}
