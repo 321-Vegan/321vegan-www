@@ -15,7 +15,6 @@ const ColorPalette = ({ hex, name, light = false }: ColorPaletteProps) => {
     <button
       onClick={() => copyToClipboard(hex)}
       className="group flex flex-col overflow-hidden rounded-lg border border-brand-100 hover:shadow-md transition-shadow cursor-pointer w-full"
-      aria-label={isCopied ? `${name} — code copié` : `Copier le code couleur ${name} : ${hex}`}
     >
       <div
         className="h-24 w-full flex items-center justify-center"
