@@ -1,5 +1,5 @@
 import { Markup } from "interweave";
-import CopyButton from "../components/CopyButton";
+import CopyButton from "@/app/ui/components/CopyButton";
 
 interface TextCardProps {
   title: string;
@@ -8,12 +8,12 @@ interface TextCardProps {
 }
 
 const TextCard = ({ title, description, text }: TextCardProps) => (
-  <div className="border border-brand-50 shadow-sm hover:-translate-y-1 transition-all duration-500 rounded-lg p-6 flex-1 flex flex-col h-[480px]">
+  <div className="border border-brand-50 shadow-sm hover:-translate-y-1 transition-all duration-500 rounded-lg p-6 flex-1 flex flex-col h-[380px] md:h-[480px]">
     <h3 className="text-brand-900 font-semibold text-lg mb-6 shrink-0">
       {title}{" "}
       <span className="text-sm font-normal text-brand-500">{description}</span>
     </h3>
-    <div className="flex-1 min-h-0 flex flex-col h-full gap-4">
+    <div className="lg:flex-1 lg:min-h-0 flex flex-col h-full gap-4">
       <p className="p-6 text-sm text-brand-600 overflow-y-scroll rounded-md bg-brand-50">
         <Markup content={text} />
       </p>
