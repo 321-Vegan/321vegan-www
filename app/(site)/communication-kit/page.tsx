@@ -71,7 +71,7 @@ export default function Page() {
         <main className="flex flex-col gap-16">
           <section>
             <h2 className="mb-12 text-lg font-merriweather">
-              Vous souhaitez partagez l&apos;appli&nbsp;? Notre kit de
+              Vous souhaitez partager l&apos;appli&nbsp;? Notre kit de
               communication est à votre disposition
             </h2>
 
