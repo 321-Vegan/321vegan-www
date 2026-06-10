@@ -33,10 +33,10 @@ const ColorPalette = ({ hex, name, light = false }: ColorPaletteProps) => {
         )}
       </div>
       <div className="px-3 py-2 bg-white text-left">
-        <p className="text-xs font-mono font-semibold text-brand-800">
+        <p className="text-xs leading-relaxed font-mono font-semibold text-brand-800">
           {isCopied ? "Copié !" : hex}
         </p>
-        <p className="text-xs text-gray-500">{name}</p>
+        <p className="text-xs leading-relaxed text-gray-500">{name}</p>
       </div>
     </button>
   );

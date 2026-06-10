@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Download } from "lucide-react";
 import Image from "next/image";
+import DownloadButton from "@/app/ui/kit/DownloadButton";
 
 const sizes = ["A4", "A5", "A6"] as const;
 const formats = ["PDF", "PNG"] as const;
@@ -39,13 +39,15 @@ const FlierDownloadCard = () => {
 
         <div className="flex flex-col gap-3">
           <div>
-            <p className="text-xs font-medium text-gray-500 mb-2">Format</p>
+            <p className="text-xs leading-relaxed font-medium text-gray-500 mb-2">
+              Format
+            </p>
             <div className="flex gap-2">
               {sizes.map((s) => (
                 <button
                   key={s}
                   onClick={() => setSize(s)}
-                  className={`px-3 py-1 text-sm rounded border transition-colors cursor-pointer ${
+                  className={`min-h-11 min-w-11 inline-flex items-center justify-center px-3 py-1 text-sm leading-relaxed rounded border transition-colors cursor-pointer ${
                     size === s
                       ? "bg-brand-600 text-white border-brand-600"
                       : "border-brand-200 text-brand-700 hover:border-brand-400"
@@ -58,7 +60,7 @@ const FlierDownloadCard = () => {
           </div>
 
           <div>
-            <p className="text-xs font-medium text-gray-500 mb-2">
+            <p className="text-xs leading-relaxed font-medium text-gray-500 mb-2">
               Type de fichier
             </p>
             <div className="flex gap-2">
@@ -66,7 +68,7 @@ const FlierDownloadCard = () => {
                 <button
                   key={f}
                   onClick={() => setFormat(f)}
-                  className={`px-3 py-1 text-sm rounded border transition-colors cursor-pointer ${
+                  className={`min-h-11 min-w-11 inline-flex items-center justify-center px-3 py-1 text-sm leading-relaxed rounded border transition-colors cursor-pointer ${
                     format === f
                       ? "bg-brand-600 text-white border-brand-600"
                       : "border-brand-200 text-brand-700 hover:border-brand-400"
@@ -79,14 +81,9 @@ const FlierDownloadCard = () => {
           </div>
         </div>
 
-        <a
-          href={href}
-          download
-          className="flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium leading-7 shadow-sm relative z-0 text-white bg-brand-600 after:bg-brand-600 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-lg hover:after:scale-x-125 hover:after:scale-y-150 hover:after:opacity-0 hover:after:transition hover:after:duration-500 cursor-pointer w-full mt-auto"
-        >
-          <Download className="size-4" aria-hidden="true" />
+        <DownloadButton href={href}>
           Télécharger ({size} · {format})
-        </a>
+        </DownloadButton>
       </div>
     </div>
   );
