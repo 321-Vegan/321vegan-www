@@ -45,6 +45,14 @@ const nextConfig: NextConfig = {
         destination: "/impact",
       },
       {
+        source: "/carte-interactive",
+        destination: "/map",
+      },
+      {
+        source: "/rappel-b12",
+        destination: "/reminder",
+      },
+      {
         source: "/sources",
         destination: "/impact",
       },

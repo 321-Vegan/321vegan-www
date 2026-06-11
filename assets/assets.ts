@@ -14,11 +14,15 @@ import {
   ResourceCategoriesDataType,
   ResourcesDataType,
 } from "@/types/definitions";
+
 import mockupImpact from "./mockup-impact.webp";
 import mockupPartners from "./mockup-partners.webp";
 import mockupScan from "./mockup-scan.webp";
 import mockupAdditives from "./mockup-additives.webp";
 import mockupCosmetics from "./mockup-cosmetics.webp";
+import mockupMap from "./mockup-scan.webp";
+import mockupReminder from "./mockup-scan.webp";
+
 import chooseCF from "./labels/label-choose-cruelty-free.webp";
 import eveVegan from "./labels/label-eve-vegan.webp";
 import ihtk from "./labels/label-ihtk.webp";
@@ -70,6 +74,8 @@ export const mockups = {
   mockupScan,
   mockupAdditives,
   mockupCosmetics,
+  mockupMap,
+  mockupReminder,
 };
 
 export const sitemapData: SitmapDataType[] = [
@@ -91,6 +97,16 @@ export const sitemapData: SitmapDataType[] = [
   },
   { url: "/suivi-d-impact", label: "Suivi d'impact", category: "services" },
   { url: "/partenaires", label: "Partenaires", category: "services" },
+  {
+    url: "/carte-interactive",
+    label: "Carte interactive",
+    category: "services",
+  },
+  {
+    url: "/rappel-b12",
+    label: "Rappel B12",
+    category: "services",
+  },
   {
     url: "/outil-signalement",
     label: "Outil de signalement",
@@ -124,6 +140,11 @@ export const sitemapData: SitmapDataType[] = [
   {
     url: "/partenaires#discounts",
     label: "Codes promos",
+    category: "resources",
+  },
+  {
+    url: "/rappel-b12#vitamin-b12",
+    label: "Vitamine B12",
     category: "resources",
   },
   { url: "/sources", label: "Sources", category: "resources" },
@@ -194,6 +215,22 @@ export const featuresData: FeatureDataType[] = [
     link: "/partenaires",
     description:
       "Avec les codes promos, vous <strong>bénéficiez de réductions lors de vos achats dans les boutiques en ligne de nos partenaires</strong>.",
+  },
+  {
+    title: "Carte interactive",
+    icon: "map",
+    bgImage: mockupMap,
+    link: "/carte-interactive",
+    description:
+      "<strong>Trouvez facilement dans quels magasins sont vendus vos produits préférés</strong> grâce à notre carte interactive. Idéal pour les vacances et les déplacements.",
+  },
+  {
+    title: "Rappel B12",
+    icon: "pill",
+    bgImage: mockupReminder,
+    link: "/rappel-b12",
+    description:
+      "<strong>Configurez un rappel pour la prise de votre vitamine B12</strong> afin de recevoir une notification pour ne pas l'oublier&nbsp;!",
   },
 ];
 

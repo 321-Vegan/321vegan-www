@@ -23,6 +23,8 @@ const menus = [
       },
       { href: "/suivi-d-impact", label: "Suivi d'impact" },
       { href: "/partenaires", label: "Nos partenaires" },
+      { href: "/carte-interactive", label: "Carte interactive" },
+      { href: "/rappel-b12", label: "Vitamine B12" },
     ],
   },
   {
