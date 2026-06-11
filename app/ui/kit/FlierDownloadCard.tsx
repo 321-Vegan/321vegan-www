@@ -24,7 +24,7 @@ const FlierDownloadCard = () => {
           alt={`Aperçu affiche 321 Vegan ${size}`}
           width={400}
           height={566}
-          className="object-contain w-full h-auto max-h-64"
+          className="object-contain w-full h-auto max-h-80"
         />
       </div>
 
