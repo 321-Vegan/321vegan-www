@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CreditLine, { Credit } from "@/app/ui/kit/CreditLine";
-import DownloadButton from "@/app/ui/kit/DownloadButton";
+import DownloadButton from "@/app/ui/components/DownloadButton";
 
 interface LogoCardProps {
   title: string;

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import DownloadButton from "@/app/ui/kit/DownloadButton";
+import DownloadButton from "@/app/ui/components/DownloadButton";
 
 const sizes = ["A4", "A5", "A6"] as const;
 const formats = ["PDF", "PNG"] as const;

@@ -1,13 +1,14 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CreditLine, { Credit } from "@/app/ui/kit/CreditLine";
-import DownloadButton from "@/app/ui/kit/DownloadButton";
+import DownloadButton from "@/app/ui/components/DownloadButton";
 
-// Hauteur partagée avec StickerCtaCard pour garder les cartes alignées dans la grille.
-export const STICKER_PREVIEW_HEIGHT = "h-56";
+export const STICKER_PREVIEW_BOX =
+  "rounded-md bg-brand-50 bg-[radial-gradient(rgba(22,101,52,0.18)_1.5px,transparent_1.5px)] bg-size-[18px_18px] h-56 p-3 flex items-center justify-center overflow-hidden";
 
 interface StickerCardProps {
   title: string;
   description: string;
+  image: StaticImageData;
   src: string;
   credit?: Credit;
 }
@@ -15,18 +16,15 @@ interface StickerCardProps {
 const StickerCard = ({
   title,
   description,
+  image,
   src,
   credit,
 }: StickerCardProps) => (
   <div className="group flex flex-col gap-4 border border-brand-50 rounded-lg p-6 shadow-md hover:-translate-y-1 transition-all duration-500">
-    <div
-      className={`rounded-md bg-brand-50 bg-[radial-gradient(rgba(22,101,52,0.18)_1.5px,transparent_1.5px)] bg-size-[18px_18px] ${STICKER_PREVIEW_HEIGHT} p-3 flex items-center justify-center overflow-hidden`}
-    >
+    <div className={STICKER_PREVIEW_BOX}>
       <Image
-        src={src}
+        src={image}
         alt={title}
-        width={600}
-        height={457}
         className="object-contain w-full h-full -rotate-3 drop-shadow-[0_8px_16px_rgba(28,25,23,0.25)] group-hover:rotate-0 group-hover:scale-105 transition-transform duration-500"
       />
     </div>

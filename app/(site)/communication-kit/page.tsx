@@ -8,6 +8,7 @@ import ColorPalette from "@/app/ui/kit/ColorPalette";
 import TextCard from "@/app/ui/kit/TextCard";
 import StickerCard from "@/app/ui/kit/StickerCard";
 import StickerCtaCard from "@/app/ui/kit/StickerCtaCard";
+import stickerVache from "@/public/kit/stickers/sticker-vache.png";
 
 export const metadata: Metadata = {
   title: "Kit de communication",
@@ -50,6 +51,7 @@ const stickerItems = [
     title: "Sticker Vache",
     description:
       "Un QR code qui renvoie vers la liste de tous les liens !",
+    image: stickerVache,
     src: "/kit/stickers/sticker-vache.png",
     credit: {
       name: "@ancielouille",
