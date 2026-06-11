@@ -6,6 +6,9 @@ import FlierDownloadCard from "@/app/ui/kit/FlierDownloadCard";
 import LogoCard from "@/app/ui/kit/LogoCard";
 import ColorPalette from "@/app/ui/kit/ColorPalette";
 import TextCard from "@/app/ui/kit/TextCard";
+import StickerCard from "@/app/ui/kit/StickerCard";
+import StickerCtaCard from "@/app/ui/kit/StickerCtaCard";
+import stickerVache from "@/public/kit/stickers/sticker-vache.png";
 
 export const metadata: Metadata = {
   title: "Kit de communication",
@@ -21,18 +24,39 @@ const brandColors = [
   { hex: "#1C1917", name: "Noir" },
 ];
 
+const logoCredit = {
+  name: "@violetteviette",
+  href: "https://www.instagram.com/violetteviette.tattoo.dessin/",
+};
+
 const logoItems = [
   {
     title: "Logo version verte",
     description: "Version du logo à utiliser sur fond blanc ou clair.",
     formats: [{ label: "PNG", href: "/logo-dark.png" }],
     preview: { src: "/logo-dark.png", dark: false },
+    credit: logoCredit,
   },
   {
     title: "Logo version blanche",
     description: "Version du logo à utiliser sur fond foncé ou coloré.",
     formats: [{ label: "PNG", href: "/logo-light.png" }],
     preview: { src: "/logo-light.png", dark: true },
+    credit: logoCredit,
+  },
+];
+
+const stickerItems = [
+  {
+    title: "Sticker Vache",
+    description:
+      "Un QR code qui renvoie vers la liste de tous les liens !",
+    image: stickerVache,
+    src: "/kit/stickers/sticker-vache.png",
+    credit: {
+      name: "@ancielouille",
+      href: "https://www.instagram.com/ancielouille",
+    },
   },
 ];
 
@@ -101,13 +125,15 @@ export default function Page() {
                 @321vegan.app
               </a>{" "}
               ou via le{" "}
-              <Link
-                href="/contact"
-                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
-              >
-                formulaire de contact
-              </Link>
-              )&nbsp;!
+              <span className="whitespace-nowrap">
+                <Link
+                  href="/contact"
+                  className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
+                >
+                  formulaire de contact
+                </Link>
+                )&nbsp;!
+              </span>
             </p>
           </section>
 
@@ -126,8 +152,8 @@ export default function Page() {
               <div className="sm:row-span-2 h-full">
                 <FlierDownloadCard />
               </div>
-              {logoItems.map((item, i) => (
-                <LogoCard key={i} {...item} />
+              {logoItems.map((item) => (
+                <LogoCard key={item.title} {...item} />
               ))}
             </div>
             <p className="mt-8 leading-relaxed">
@@ -151,6 +177,27 @@ export default function Page() {
               </a>
               .
             </p>
+          </section>
+
+          <section aria-labelledby="stickers-heading" className="scroll-mt-20">
+            <h2
+              id="stickers-heading"
+              className="text-2xl font-semibold text-brand-600 my-8 font-merriweather"
+            >
+              Stickers
+            </h2>
+            <p className="leading-relaxed mb-6 text-gray-600">
+              Imprimez nos stickers et collez-les où bon vous semble (ordinateur,
+              gourde, vélo, ...) pour faire connaître l&apos;appli autour de
+              vous. Il est prévu à l&apos;avenir que vous puissiez en commander
+              gratuitement&nbsp;!
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {stickerItems.map((item) => (
+                <StickerCard key={item.src} {...item} />
+              ))}
+              <StickerCtaCard />
+            </div>
           </section>
 
           <section aria-labelledby="palette-heading" className="scroll-mt-20">

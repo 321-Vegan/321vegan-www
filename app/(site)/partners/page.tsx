@@ -82,8 +82,8 @@ export default function Page() {
               title="Vous souhaitez devenir partenaire&nbsp;?"
               btnColor="bg-brand-600 after:bg-brand-600"
             >
-              Contactez-nous pour rejoindre notre listes de partenaires et faire
-              bénéficiez d&apos;avantages à la communauté.
+              Contactez-nous pour rejoindre notre liste de partenaires et faire
+              bénéficier d&apos;avantages à la communauté.
             </ContactUsCta>
           </section>
         </main>
