@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
-import HowDoesItWork from "@/app/ui/scan/HowDoesItWork";
 
 export const metadata: Metadata = {
   title: "Carte vegan",
@@ -74,27 +73,10 @@ const Page = () => {
 
           <section>
             <h2 className="my-12 text-lg font-merriweather">
-              Comment utiliser le scanner de codes-barres 321 Vegan&nbsp;:
+              Comment utiliser la carte interactive végane&nbsp;:
             </h2>
-
-            <HowDoesItWork />
-
-            <p className="mt-12 mb-16 leading-relaxed italic">
-              Chaque produit est vérifié manuellement par l&apos;équipe de
-              contributrices et contributeurs. Le scan est prévu pour les
-              produits alimentaires, pour les cosmétiques, vous pouvez utiliser{" "}
-              <Link
-                href="/verification-de-cosmetiques"
-                className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-500 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-500 hover:text-white hover:-translate-y-1 focus:bg-brand-500 focus:text-white active:bg-brand-500 active:text-white transition-transform duration-300"
-              >
-                la page recherche
-                <ArrowRight
-                  className="size-4 text-current"
-                  aria-hidden="true"
-                />
-              </Link>
-              .
-            </p>
+            TODO
+            <p className="mt-12 mb-16 leading-relaxed italic">TODO</p>
           </section>
 
           <section>
