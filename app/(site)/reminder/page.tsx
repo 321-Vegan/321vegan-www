@@ -9,15 +9,15 @@ import {
   MapPin,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import Admonition from "@/app/ui/components/Admonition";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
-import Admonition from "@/app/ui/components/Admonition";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Vitamine B12",
   description:
-    "Configurez un rappel pour la prise de votre vitamine B12 afin de ne plus l'oublier !.",
+    "Configurez un rappel pour la prise de votre vitamine B12 directement depuis l'aplication afin de ne plus l'oublier !.",
 };
 
 const Page = () => {
@@ -49,28 +49,26 @@ const Page = () => {
                 <p className="text-justify lg:pt-12 leading-relaxed">
                   <strong>
                     Configurez un rappel pour la prise de votre vitamine B12
-                    afin de recevoir une notification pour ne pas
-                    l&apos;oublier&nbsp;!
+                    directement depuis l&apos;application afin de recevoir une
+                    notification pour ne pas l&apos;oublier&nbsp;!
                   </strong>
                   Vous pouvez également{" "}
-                  <strong>
-                    enregistrer vos prises afin de garder un suivi
-                  </strong>{" "}
+                  <strong>enregistrer vos prises pour garder un suivi</strong>{" "}
                   et vérifier que vous n&apos;avez pas omis une dose.
                 </p>
                 <p className="text-justify leading-relaxed">
-                  Consultez nos{" "}
+                  Consultez{" "}
                   <Link
                     href={{ pathname: "/rappel-b12", hash: "vitamin-b12" }}
                     className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-500 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-500 hover:text-white hover:-translate-y-1 focus:bg-brand-500 focus:text-white active:bg-brand-500 active:text-white transition-transform duration-300"
                   >
-                    conseils sur la prise de vitamine B12
+                    <strong>nos conseils sur la prise de vitamine B12</strong>
                     <ArrowDown
                       className="size-4 text-current"
                       aria-hidden="true"
                     />
                   </Link>{" "}
-                  pour vous assurez une absorption optimale.
+                  pour vous assurer une absorption optimale.
                 </p>
                 <p className="text-justify leading-relaxed">
                   Grâce à l&apos;appli 321 Vegan,{" "}
@@ -88,6 +86,28 @@ const Page = () => {
             <h2 className="my-12 text-lg font-merriweather">
               Quelques informations sur la vitamine B12&nbsp;:
             </h2>
+            <p className="mb-6 leading-relaxed">
+              <strong>
+                La vitamine B12, également appelée cobalamine, est une vitamine
+                essentielle qui est normalement impliquée comme cofacteur dans
+                le métabolisme de chacune des cellules du corps humain
+              </strong>
+              , plus particulièrement dans la synthèse de l&apos;ADN et sa
+              régulation ainsi que dans la synthèse des acides gras et dans la
+              production d&apos;énergie. Elle est{" "}
+              <strong>
+                exclusivement d&apos;origine bactérienne et on la trouve
+                principalement dans les excréments et la terre
+              </strong>
+              .{" "}
+              <strong>
+                On retrouve très peu de vitamine B12 à l&apos;état naturel à
+                cause de l&apos;appauvrissement des sols dû à l&apos;agriculture
+                et à l&apos;élevage, mais heureusement, on sait la fabriquer en
+                laboratoire
+              </strong>{" "}
+              depuis le début des années 1970.
+            </p>
             <h3 className="flex items-center gap-2 font-semibold text-brand-700">
               <Info className="size-4" />
               Pourquoi prendre un complément&nbsp;?
@@ -103,12 +123,10 @@ const Page = () => {
               Dosages recommandés&nbsp;:
             </h3>
             <ul className="list-(--plant-marker) pl-4 mb-4 text-lg leading-relaxed">
-              <li className="pl-1">Par jour&nbsp;: 25 ug</li>
+              <li className="pl-1">Par jour&nbsp;: 25ug</li>
+              <li className="pl-1">Par semaine&nbsp;: 2000ug (en une prise)</li>
               <li className="pl-1">
-                Par semaine&nbsp;: 2000 ug (en une prise)
-              </li>
-              <li className="pl-1">
-                Tous les 15 jours&nbsp;: 5000 ug (en une prise)
+                Tous les 15 jours&nbsp;: 5000ug (en une prise)
               </li>
               <li className="pl-1">
                 Pour les enfants&nbsp;: de 6 à 24 mois doses divisées par 4, de

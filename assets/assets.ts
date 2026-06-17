@@ -13,60 +13,70 @@ import {
   SignalConsoTemplatesDataType,
   ResourceCategoriesDataType,
   ResourcesDataType,
+  MapFeaturesDataType,
 } from "@/types/definitions";
 
-import mockupImpact from "./mockup-impact.webp";
-import mockupPartners from "./mockup-partners.webp";
-import mockupScan from "./mockup-scan.webp";
-import mockupAdditives from "./mockup-additives.webp";
-import mockupCosmetics from "./mockup-cosmetics.webp";
-import mockupMap from "./mockup-scan.webp";
-import mockupReminder from "./mockup-scan.webp";
+import mockupAdditives from "./mockups/mockup-additives.webp";
+import mockupCosmetics from "./mockups/mockup-cosmetics.webp";
+import mockupImpact from "./mockups/mockup-impact.webp";
+import mockupMap from "./mockups/mockup-map.webp";
+import mockupPartners from "./mockups/mockup-partners.webp";
+import mockupScan from "./mockups/mockup-scan.webp";
+import mockupReminder from "./mockups/mockup-reminder.webp";
 
 import chooseCF from "./labels/label-choose-cruelty-free.webp";
 import eveVegan from "./labels/label-eve-vegan.webp";
 import ihtk from "./labels/label-ihtk.webp";
 import leapingBunny from "./labels/label-leaping-bunny.webp";
+import oneVoiceC from "./labels/label-one-voice-c.webp";
+import oneVoiceT from "./labels/label-one-voice-t.webp";
 import petaVeganCF from "./labels/label-peta-cf-and-vegan.webp";
 import petaCF from "./labels/label-peta-cruelty-free.webp";
 import vLabel from "./labels/label-v-label.webp";
 import veganSociety from "./labels/label-vegan-society.webp";
-import oneVoiceT from "./labels/label-one-voice-t.webp";
-import oneVoiceC from "./labels/label-one-voice-c.webp";
 
-import L214 from "./resources/associations/asso-l214.webp";
-import coexister from "./resources/associations/asso-coexister.webp";
-import sanctopia from "./resources/associations/asso-sanctopia.webp";
-import groingroin from "./resources/associations/asso-groingroin.webp";
-import futurAsso from "./resources/associations/asso-futur.webp";
 import asmAsso from "./resources/associations/asso-animal-save-movement.webp";
-import refugeAnimaliste from "./resources/associations/asso-refuges-animalistes.webp";
+import coexister from "./resources/associations/asso-coexister.webp";
+import futurAsso from "./resources/associations/asso-futur.webp";
+import gardiensDesFelins from "./resources/associations/asso-gardiens-des-felins.webp";
+import groingroin from "./resources/associations/asso-groingroin.webp";
+import L214 from "./resources/associations/asso-l214.webp";
 import nosViventia from "./resources/associations/asso-nos-viventia.webp";
 import paz from "./resources/associations/asso-paz.webp";
-import gardiensDesFelins from "./resources/associations/asso-gardiens-des-felins.webp";
-import poissonPodcast from "./resources/podcasts/poisson-podcast.webp";
-import pouleSentimentale from "./resources/podcasts/poule-sentimentale.webp";
+import refugeAnimaliste from "./resources/associations/asso-refuges-animalistes.webp";
+import sanctopia from "./resources/associations/asso-sanctopia.webp";
+
+import observatoireDuSpecisme from "./resources/blogs/observatoire-du-specisme.webp";
+import questionsAnimalistes from "./resources/blogs/questions-animalistes.webp";
+import viandeInfo from "./resources/blogs/viande-info-site.webp";
+
+import cowspiracy from "./resources/documentaries/cowspiracy.webp";
+import dominion from "./resources/documentaries/dominion.webp";
+import earthlings from "./resources/documentaries/earthlings.webp";
+import egoAlien from "./resources/documentaries/ego.webp";
+import seaspiracy from "./resources/documentaries/seaspiracy.webp";
+import theGameChangers from "./resources/documentaries/the-game-changers.webp";
+
+import b12crew from "./resources/music/b12crew.webp";
+import feldi from "./resources/music/feldi.webp";
+import harambeProject from "./resources/music/harambe-project.webp";
+import resTurner from "./resources/music/res-turner.webp";
+
+import anola from "./resources/others/anola.webp";
+import bernier from "./resources/others/logo-bernier.webp";
+import projetMeduses from "./resources/others/pojet-meduses.webp";
+
 import lasVeganParano from "./resources/podcasts/las-vegan-parano.webp";
 import leMondeApresLeSpecisme from "./resources/podcasts/le-monde-apres-le-specisme.webp";
 import manje from "./resources/podcasts/manje.webp";
-import lamorce from "./resources/readings/lamorce.webp";
-import insolenteVeggie from "./resources/readings/insolente-veggie.webp";
+import poissonPodcast from "./resources/podcasts/poisson-podcast.webp";
+import pouleSentimentale from "./resources/podcasts/poule-sentimentale.webp";
+
 import usineDuPire from "./resources/readings/couverture-usinedupire-laveilleuse.webp";
-import questionsAnimalistes from "./resources/blogs/questions-animalistes.webp";
-import observatoireDuSpecisme from "./resources/blogs/observatoire-du-specisme.webp";
-import earthlings from "./resources/documentaries/earthlings.webp";
-import dominion from "./resources/documentaries/dominion.webp";
-import cowspiracy from "./resources/documentaries/cowspiracy.webp";
-import seaspiracy from "./resources/documentaries/seaspiracy.webp";
-import theGameChangers from "./resources/documentaries/the-game-changers.webp";
+import insolenteVeggie from "./resources/readings/insolente-veggie.webp";
+import lamorce from "./resources/readings/lamorce.webp";
+
 import logoLda from "./resources/sciences/logo-lda.webp";
-import harambeProject from "./resources/music/harambe-project.webp";
-import b12crew from "./resources/music/b12crew.webp";
-import resTurner from "./resources/music/res-turner.webp";
-import feldi from "./resources/music/feldi.webp";
-import projetMeduses from "./resources/others/pojet-meduses.webp";
-import bernier from "./resources/others/logo-bernier.webp";
-import anola from "./resources/others/anola.webp";
 
 export const mockups = {
   mockupImpact,
@@ -516,6 +526,33 @@ export const cosmeticsSourcesData: string[] = [
   "https://www.fondation-droit-animal.org/",
 ];
 
+export const mapFeaturesData: MapFeaturesDataType[] = [
+  {
+    title: "Explorez",
+    description:
+      "Explorez la carte interactive pour découvrir tous les magasins répertoriés.",
+    icon: "map",
+  },
+  {
+    title: "Recherchez",
+    description:
+      "Recherchez rapidement où sont vendus vos produits vegan préférés.",
+    icon: "search",
+  },
+  {
+    title: "Trouvez",
+    description:
+      "Appuyez sur un magasin pour voir les produits vegan disponibles.",
+    icon: "store",
+  },
+  {
+    title: "Ajoutez",
+    description:
+      "Ajoutez vos magasins favoris où vous trouvez vos produits vegan préférés.",
+    icon: "map-pin-plus",
+  },
+];
+
 export const signalConsoChecklistData: SignalConsoChecklistDataType[] = [
   {
     icon: "camera",
@@ -806,6 +843,14 @@ export const resourcesData: ResourcesDataType[] = [
     link: "https://tousegaux.home.blog/",
   },
   {
+    category_slug: "blogs",
+    name: "Viande Info",
+    description:
+      "L'élevage et la pêche ont aujourd'hui des conséquences dramatiques pour les humains, les animaux et l'environnement. Ce site créé par L214 recense l'ensemble des problématiques liées à l'élevage et la pêche, et fournit énormément de ressources sur ce sujet.",
+    link: "https://www.viande.info/",
+    logo: viandeInfo,
+  },
+  {
     category_slug: "documentaires",
     name: "Earthlings",
     description:
@@ -844,6 +889,14 @@ export const resourcesData: ResourcesDataType[] = [
       "Ce documentaire s’intéresse à de nombreuses personnalités (sportifs, scientifiques, militaires…) qui ont adopté un régime vegétarien. L’œuvre veut montrer que l’on peut réaliser de grandes choses même sans consommer de la viande, à l’image de Carl Lewis, qui a été l’homme le plus rapide du monde alors qu’il était vegan.",
     link: "https://gamechangersmovie.com/",
     logo: theGameChangers,
+  },
+  {
+    category_slug: "documentaires",
+    name: "Comment comprendre le langage des aliens ?",
+    description:
+      "&laquo;&nbsp;Ce n'était pas ce qu'on attendait, mais c'était ce dont on avait besoin.&nbsp;&raquo; Cette critique d'un&middot;e spectateurice résume parfaitement ce documentaire, à regarder et à partager sans modération.",
+    link: "https://www.youtube.com/watch?v=j2JDvXvymBQ",
+    logo: egoAlien,
   },
   {
     category_slug: "etudes-scientifiques",

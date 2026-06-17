@@ -111,6 +111,12 @@ export type AdditiveDataType = {
   source: string;
 };
 
+export type MapFeaturesDataType = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
 export type CampaignDataType = {
   /** URL segment: /outil-signalement/[slug] */
   slug: string;

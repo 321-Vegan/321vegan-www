@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import { mockups } from "@/assets/assets";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
+import MapFeatures from "@/app/ui/map/MapFeatures";
 
 export const metadata: Metadata = {
   title: "Carte vegan",
@@ -25,8 +24,7 @@ const Page = () => {
         <main>
           <section>
             <h2 className="mb-12 text-lg font-merriweather">
-              Trouvez facilement où sont vendus vos produits vegan
-              préférés&nbsp;!
+              Trouvez facilement vos produits vegan préférés&nbsp;!
             </h2>
             <div className="flex flex-col lg:flex-row mx-auto overflow-hidden">
               <div className="lg:w-1/2 flex-1">
@@ -44,18 +42,19 @@ const Page = () => {
                     Trouvez facilement dans quels magasins sont vendus vos
                     produits vegan préférés
                   </strong>
-                  . Notre carte interactive vous indique où trouver vos produits
-                  préférés, même en déplacement&nbsp;!
+                  . Notre carte interactive végane vous indique où trouver vos
+                  produits préférés, même en déplacement&nbsp;!
                 </p>
                 <p className="text-justify leading-relaxed">
                   Vous pouvez{" "}
                   <strong>
-                    scanner des produits s&apos;ils ne sont pas déjà référencés,
+                    ajouter des points de vente s&apos;ils ne sont pas déjà
+                    référencés
                   </strong>
                   . Ainsi,{" "}
                   <strong>
                     vous participez à aider la communauté végane à identifier
-                    les magasins qui vendent vos produits préférés
+                    les magasins qui vendent vos produits vegan préférés
                   </strong>
                   .
                 </p>
@@ -75,8 +74,13 @@ const Page = () => {
             <h2 className="my-12 text-lg font-merriweather">
               Comment utiliser la carte interactive végane&nbsp;:
             </h2>
-            TODO
-            <p className="mt-12 mb-16 leading-relaxed italic">TODO</p>
+            <MapFeatures />
+            <p className="mt-12 mb-16 leading-relaxed italic">
+              L&apos;accès à la carte intéractive végane est gratuit pour tout
+              soutien au projet. Une offre d&apos;essai est disponible pour les
+              personnes souhaitant tester la fonctionnalité avant de
+              s&apos;engager.
+            </p>
           </section>
 
           <section>
