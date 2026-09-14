@@ -73,6 +73,10 @@ const nextConfig: NextConfig = {
         destination: "/terms",
       },
       {
+        source: "/cgu",
+        destination: "/app-terms",
+      },
+      {
         source: "/kit-de-communication",
         destination: "/communication-kit",
       },

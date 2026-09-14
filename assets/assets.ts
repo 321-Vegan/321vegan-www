@@ -135,6 +135,11 @@ export const sitemapData: SitmapDataType[] = [
     category: "support",
   },
   { url: "/mentions-legales", label: "Mentions légales", category: "support" },
+  {
+    url: "/cgu",
+    label: "CGU de l'application",
+    category: "support",
+  },
   { url: "/#faqs", label: "FAQs", category: "general" },
   { url: "/#contributions", label: "Nous rejoindre", category: "general" },
   { url: "/#testimonials", label: "Témoignages", category: "general" },
