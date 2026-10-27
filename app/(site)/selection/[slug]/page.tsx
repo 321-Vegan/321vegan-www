@@ -6,13 +6,14 @@ import AppStoresCta from "@/app/ui/components/AppStoresCta";
 // A public restaurant selection shared from the app: the link opens it there
 // when installed (see public/.well-known), this page offers to install it
 // otherwise. The API needs an account, so the selection itself isn't shown.
+// The link is its id and title: /selection/42-mes-restos-a-lyon.
 
-type Props = { params: Promise<{ id: string }> };
+type Props = { params: Promise<{ slug: string }> };
 
 const appStoreId = appStoreLinks.apple.match(/id(\d+)/)?.[1];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+  const { slug } = await params;
   return {
     title: "Sélection de restaurants vegan",
     description:
@@ -22,15 +23,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(appStoreId && {
       itunes: {
         appId: appStoreId,
-        appArgument: `https://321vegan.fr/s/${id}`,
+        appArgument: `https://321vegan.fr/selection/${slug}`,
       },
     }),
   };
 }
 
 const Page = async ({ params }: Props) => {
-  const { id } = await params;
-  if (!/^\d+$/.test(id)) notFound();
+  const { slug } = await params;
+  if (!/^\d+(-[a-z0-9-]*)?$/.test(slug)) notFound();
 
   return (
     <div className="w-full flex flex-col items-center justify-center gap-4 pt-16 lg:px-[12%]">

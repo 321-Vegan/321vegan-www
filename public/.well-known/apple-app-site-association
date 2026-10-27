@@ -5,7 +5,7 @@
         "appIDs": ["G3B26V23Q3.com.example.veganApp"],
         "components": [
           {
-            "/": "/s/*",
+            "/": "/selection/*",
             "comment": "A public restaurant selection shared from the app"
           }
         ]
