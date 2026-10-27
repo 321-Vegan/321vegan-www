@@ -7,6 +7,10 @@
           {
             "/": "/selection/*",
             "comment": "A public restaurant selection shared from the app"
+          },
+          {
+            "/": "/restaurant/*",
+            "comment": "A restaurant shared from the app"
           }
         ]
       }
