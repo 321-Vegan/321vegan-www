@@ -18,6 +18,15 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   serverExternalPackages: ["@react-email/components"],
+  async headers() {
+    return [
+      {
+        // No extension: served as JSON for iOS to open /s/* links in the app
+        source: "/.well-known/apple-app-site-association",
+        headers: [{ key: "Content-Type", value: "application/json" }],
+      },
+    ];
+  },
   async rewrites() {
     return [
       {

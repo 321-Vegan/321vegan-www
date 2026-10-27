@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app321vegan.veganapp",
+      "sha256_cert_fingerprints": [
+        "AC:5D:E4:0A:74:29:48:53:4D:C4:EA:77:B4:67:3C:B3:38:56:0A:FE:9D:E6:17:12:B6:AE:13:54:E9:8C:3B:94"
+      ]
+    }
+  }
+]

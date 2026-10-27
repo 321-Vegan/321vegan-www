@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["G3B26V23Q3.com.example.veganApp"],
+        "components": [
+          {
+            "/": "/s/*",
+            "comment": "A public restaurant selection shared from the app"
+          }
+        ]
+      }
+    ]
+  }
+}
