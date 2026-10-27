@@ -40,8 +40,11 @@ export default function Page() {
                   <span className="font-bold text-nowrap">{owner.name}</span>{" "}
                   est une application mobile qui aide ses
                   utilisateur&middot;ice&middot;s à découvrir et identifier des
-                  produits véganes. L&apos;utilisation de l&apos;application
-                  vaut acceptation des présentes conditions.
+                  produits véganes, et à trouver sur une carte des lieux
+                  proposant des options véganes (restaurants, cafés,
+                  épiceries, food trucks, hébergements…). L&apos;utilisation
+                  de l&apos;application vaut acceptation des présentes
+                  conditions.
                 </p>
               </div>
             </section>
@@ -217,11 +220,138 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                7. Contenu et propriété intellectuelle
+                7. Contributions des utilisateur&middot;ice&middot;s
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
-                  L&apos;ensemble du contenu de l&apos;application (textes,
+                  Avec un compte, vous pouvez enrichir l&apos;application&nbsp;:
+                  noter et commenter des lieux, indiquer le prix payé, envoyer
+                  des photos, ajouter des lieux, proposer des modifications et
+                  créer des sélections de lieux à partager ou à rendre
+                  publiques.
+                </p>
+                <div className="bg-gray-50 rounded-lg p-6 my-2">
+                  <ul className="space-y-4 text-gray-600 leading-relaxed">
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Licence d&apos;utilisation&nbsp;:
+                        </span>{" "}
+                        vous restez propriétaire de vos textes et de vos
+                        photos, et vous accordez à {owner.name}, gratuitement
+                        et pour le monde entier, le droit non exclusif de les
+                        reproduire, de les adapter (recadrage, redimensionnement)
+                        et de les afficher dans l&apos;application et sur ses
+                        supports de communication, aussi longtemps
+                        qu&apos;ils y restent publiés&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Vos photos&nbsp;:</span>{" "}
+                        vous garantissez en être l&apos;auteur&middot;ice ou
+                        disposer des droits nécessaires, et ne pas y montrer
+                        de personne reconnaissable sans son accord&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Vos avis&nbsp;:</span>{" "}
+                        ils doivent refléter une expérience réelle et
+                        personnelle. Sont interdits les avis sur un
+                        établissement que vous gérez, où vous travaillez ou
+                        dont vous êtes concurrent&middot;e, ainsi que les
+                        avis rémunérés ou obtenus en échange d&apos;un
+                        avantage&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Contenus interdits&nbsp;:
+                        </span>{" "}
+                        propos injurieux, diffamatoires, discriminatoires ou
+                        haineux, informations personnelles sur des tiers,
+                        publicité, contenus sans rapport avec le lieu ou
+                        portant atteinte aux droits d&apos;autrui&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Modération&nbsp;:</span>{" "}
+                        les commentaires, photos, lieux ajoutés et propositions
+                        de modification sont vérifiés par notre équipe avant
+                        publication. Une note sans commentaire ni photo est
+                        publiée directement. Nous pouvons refuser ou retirer
+                        à tout moment une contribution qui ne
+                        respecte pas les présentes conditions&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Sélections publiques&nbsp;:
+                        </span>{" "}
+                        une sélection rendue publique est visible de tou&middot;te&middot;s
+                        les utilisateur&middot;ice&middot;s et ne peut plus
+                        redevenir privée. Vous pouvez toutefois la supprimer
+                        à tout moment&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Retrait et suppression du compte&nbsp;:
+                        </span>{" "}
+                        vous pouvez modifier ou supprimer vos avis et vos
+                        photos à tout moment. Si vous supprimez votre compte,
+                        vos avis, photos, lieux ajoutés et propositions de
+                        modification déjà publiés restent visibles, mais ne
+                        sont plus associés à votre pseudo.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                8. Contenu et propriété intellectuelle
+              </h3>
+              <div className="prose text-gray-600 mb-5 leading-relaxed">
+                <p>
+                  À l&apos;exception des contributions des
+                  utilisateur&middot;ice&middot;s (voir l&apos;article 7),
+                  l&apos;ensemble du contenu de l&apos;application (textes,
                   images, logos, design) est la propriété de{" "}
                   <span className="font-bold text-nowrap">{owner.name}</span>{" "}
                   et est protégé par les lois relatives à la propriété
@@ -233,7 +363,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                8. Limitation de responsabilité
+                9. Limitation de responsabilité
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -245,12 +375,34 @@ export default function Page() {
                   d&apos;un produit, référez-vous à l&apos;étiquette du
                   produit.
                 </p>
+                <p>
+                  Les informations sur les lieux (options véganes, horaires,
+                  prix, services, statut d&apos;ouverture) sont en grande
+                  partie renseignées par la communauté et peuvent ne plus
+                  être à jour&nbsp;: un établissement peut changer sa carte,
+                  ses horaires ou fermer sans que nous en soyons
+                  informé&middot;e&middot;s. Les avis reflètent
+                  l&apos;opinion de leurs auteur&middot;ice&middot;s et non
+                  celle de {owner.name}. Les liens vers les menus et sites
+                  des établissements mènent à des sites tiers dont nous ne
+                  sommes pas responsables. En cas de doute, renseignez-vous
+                  directement auprès de l&apos;établissement.
+                </p>
+                <Admonition variant="yellow">
+                  <p className="text-sm">
+                    L&apos;indication «&nbsp;options sans gluten&nbsp;» est
+                    déclarative et ne garantit pas l&apos;absence de gluten
+                    ni de contamination croisée. Si vous êtes
+                    cœliaque ou allergique, vérifiez systématiquement auprès
+                    de l&apos;établissement avant de commander.
+                  </p>
+                </Admonition>
               </div>
             </section>
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                9. Résiliation et suspension du compte
+                10. Résiliation et suspension du compte
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -259,9 +411,10 @@ export default function Page() {
                   moment et sans préavis, l&apos;accès au compte d&apos;un·e
                   utilisateur&middot;ice en cas de non-respect des présentes
                   conditions ou d&apos;usage frauduleux ou abusif de
-                  l&apos;application (signalements mensongers répétés,
-                  tentative d&apos;accès non autorisé, atteinte à la sécurité
-                  ou au bon fonctionnement du service). Dans ce cas, aucune
+                  l&apos;application (signalements mensongers répétés, faux
+                  avis, publication répétée de contenus interdits, tentative
+                  d&apos;accès non autorisé, atteinte à la sécurité ou au bon
+                  fonctionnement du service). Dans ce cas, aucune
                   somme déjà versée ne sera remboursée par{" "}
                   {owner.name}, sans préjudice des droits dont vous pourriez
                   disposer au titre des politiques de remboursement propres à
@@ -272,7 +425,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                10. Dispositions spécifiques à l&apos;App Store (Apple)
+                11. Dispositions spécifiques à l&apos;App Store (Apple)
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -381,7 +534,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                11. Droit applicable et juridiction compétente
+                12. Droit applicable et juridiction compétente
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -401,7 +554,7 @@ export default function Page() {
 
             <section className="mb-10">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                12. Modification des conditions
+                13. Modification des conditions
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -449,7 +602,10 @@ export default function Page() {
                       />
                       <span>
                         <span className="font-semibold">Pseudo&nbsp;:</span>{" "}
-                        nom d&apos;affichage dans l&apos;application&nbsp;;
+                        nom d&apos;affichage, visible des autres
+                        utilisateur&middot;ice&middot;s à côté de vos avis
+                        et de vos sélections partagées ou publiques (avec le
+                        badge de soutien si vous êtes abonné&middot;e)&nbsp;;
                       </span>
                     </li>
                     <li className="flex gap-3">
@@ -495,18 +651,6 @@ export default function Page() {
                       />
                       <span>
                         <span className="font-semibold">
-                          Données géographiques statiques&nbsp;:
-                        </span>{" "}
-                        transmission facultative&nbsp;;
-                      </span>
-                    </li>
-                    <li className="flex gap-3">
-                      <Check
-                        className="size-6 text-blue-500 shrink-0"
-                        strokeWidth={1}
-                      />
-                      <span>
-                        <span className="font-semibold">
                           Suivi B12 (facultatif)&nbsp;:
                         </span>{" "}
                         dates de prise et fréquence de supplémentation,
@@ -525,7 +669,114 @@ export default function Page() {
                           Signalements d&apos;erreur&nbsp;:
                         </span>{" "}
                         commentaire et contact facultatif, ainsi que la
-                        réponse de notre équipe.
+                        réponse de notre équipe&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Code ami&nbsp;:
+                        </span>{" "}
+                        identifiant généré automatiquement (personnalisable
+                        par les abonné&middot;e&middot;s), que vous pouvez
+                        communiquer pour qu&apos;on vous envoie des
+                        sélections&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Avis sur les lieux&nbsp;:
+                        </span>{" "}
+                        note globale, notes détaillées facultatives, prix
+                        payé par personne, commentaire et photos
+                        facultatifs&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Lieux ajoutés et propositions de modification&nbsp;:
+                        </span>{" "}
+                        informations sur le lieu, commentaire et photos
+                        facultatifs, ainsi que la décision de notre
+                        équipe&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Lieux enregistrés&nbsp;:
+                        </span>{" "}
+                        liste personnelle, visible de vous seul&middot;e&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Sélections&nbsp;:</span>{" "}
+                        titre, description, lieux choisis et vos notes sur
+                        chacun, image de couverture facultative, ainsi que
+                        les sélections qu&apos;on vous envoie et votre
+                        réponse.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Avec votre autorisation d&apos;accès à la localisation, que
+                  vous ayez un compte ou non&nbsp;:
+                </p>
+                <div className="bg-gray-50 rounded-lg p-6 my-2">
+                  <ul className="space-y-4 text-gray-600 leading-relaxed">
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Sur la carte&nbsp;:</span>{" "}
+                        votre position sert à afficher les lieux autour de
+                        vous et à les trier par distance. Elle est envoyée à
+                        nos serveurs le temps de la recherche, mais
+                        n&apos;est pas conservée&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">Lors d&apos;un scan&nbsp;:</span>{" "}
+                        la position est enregistrée avec le produit scanné
+                        (et associée à votre compte si vous êtes
+                        connecté&middot;e) afin d&apos;identifier le magasin
+                        où il est vendu. Pour trouver les magasins à
+                        proximité, seules les coordonnées, sans aucun
+                        identifiant, sont transmises à Geoapify (service
+                        cartographique basé sur OpenStreetMap). Sans
+                        autorisation, le scan n&apos;est pas enregistré sur
+                        nos serveurs.
                       </span>
                     </li>
                   </ul>
@@ -605,6 +856,18 @@ export default function Page() {
                         strokeWidth={1}
                       />
                       <span>afficher vos statistiques personnelles&nbsp;;</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        permettre à notre équipe de modération de vérifier
+                        vos contributions&nbsp;: pour cela, elle voit votre
+                        pseudo, la date de création de votre compte et le
+                        nombre de vos contributions&nbsp;;
+                      </span>
                     </li>
                     <li className="flex gap-3">
                       <Check
@@ -721,8 +984,14 @@ export default function Page() {
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
                   Les données sont conservées tant que votre compte reste
-                  actif. En cas de suppression de compte, toutes les données
-                  associées sont supprimées.
+                  actif. En cas de suppression de compte, vos données
+                  personnelles sont supprimées (adresse e-mail, profil,
+                  lieux enregistrés, sélections, suivi B12…). Vos
+                  contributions (avis, photos, lieux ajoutés, propositions
+                  de modification, produits envoyés, signalements) ainsi
+                  que l&apos;historique de vos scans sont conservés de
+                  façon anonyme&nbsp;: ils ne sont plus associés à votre
+                  compte ni à votre pseudo.
                 </p>
               </div>
             </section>
