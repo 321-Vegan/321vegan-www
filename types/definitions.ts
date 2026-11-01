@@ -172,3 +172,90 @@ export type ResourcesDataType = {
   link: string;
   logo?: StaticImageData;
 };
+
+export type OpeningSlotDataType = {
+  day: number;
+  open: string;
+  close: string;
+};
+
+export type RestaurantStopDataType = {
+  label: string | null;
+  address: string | null;
+  city: string | null;
+  latitude: number;
+  longitude: number;
+  opening_hours: OpeningSlotDataType[];
+  note: string | null;
+};
+
+export type RestaurantPhotoDataType = {
+  id: number;
+  kind: "PLACE" | "MENU" | null;
+  path: string;
+  is_featured: boolean;
+};
+
+export type RestaurantVeganStatus = "FULLY_VEGAN" | "VEGAN_OPTIONS";
+
+export type RestaurantOperatingStatus =
+  | "OPEN"
+  | "TEMPORARILY_CLOSED"
+  | "PERMANENTLY_CLOSED";
+
+export type RestaurantDataType = {
+  id: number;
+  name: string;
+  latitude: number;
+  longitude: number;
+  address: string | null;
+  city: string | null;
+  description: string | null;
+  vegan_status: RestaurantVeganStatus;
+  vegan_options_details: string | null;
+  has_gluten_free_options: boolean;
+  tags: string[];
+  service_options: string[];
+  has_storefront: boolean;
+  service_area: string | null;
+  opening_hours: OpeningSlotDataType[] | null;
+  opening_hours_note: string | null;
+  stops: RestaurantStopDataType[] | null;
+  phone: string | null;
+  website: string | null;
+  facebook: string | null;
+  instagram: string | null;
+  menu_url: string | null;
+  operating_status: RestaurantOperatingStatus;
+  closed_until: string | null;
+  closure_note: string | null;
+  featured_photo: RestaurantPhotoDataType | null;
+  photos: RestaurantPhotoDataType[];
+};
+
+export type RestaurantSelectionItemDataType = {
+  restaurant: Pick<
+    RestaurantDataType,
+    | "id"
+    | "name"
+    | "city"
+    | "vegan_status"
+    | "has_gluten_free_options"
+    | "tags"
+    | "operating_status"
+    | "featured_photo"
+  >;
+  note: string | null;
+  author_rating: number | null;
+};
+
+export type RestaurantSelectionDataType = {
+  id: number;
+  title: string;
+  description: string | null;
+  owner_nickname: string;
+  cover_path: string | null;
+  cover_photos: RestaurantPhotoDataType[];
+  accepted_count: number | null;
+  items: RestaurantSelectionItemDataType[];
+};

@@ -984,3 +984,35 @@ export const resourcesData: ResourcesDataType[] = [
     logo: anola,
   },
 ];
+
+// "Restaurants" tags (lieux)
+export const restaurantTagLabels: Record<string, string> = {
+  restaurant: "Restaurant",
+  cafe: "Café",
+  bakery: "Boulangerie",
+  food_truck: "Food truck",
+  fast_food: "Fast food",
+  ice_cream: "Glacier",
+  bar: "Bar",
+  caterer: "Traiteur",
+  grocery: "Épicerie",
+  hotel: "Hôtel",
+  guesthouse: "Chambre d'hôtes",
+  hostel: "Auberge de jeunesse",
+};
+
+export const restaurantServiceOptionLabels: Record<string, string> = {
+  dine_in: "Sur place",
+  takeaway: "À emporter",
+  delivery: "Livraison",
+};
+
+export const dayNames = [
+  "Lundi",
+  "Mardi",
+  "Mercredi",
+  "Jeudi",
+  "Vendredi",
+  "Samedi",
+  "Dimanche",
+];
