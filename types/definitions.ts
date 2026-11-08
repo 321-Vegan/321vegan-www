@@ -218,6 +218,11 @@ export type RestaurantDataType = {
   service_options: string[];
   has_storefront: boolean;
   service_area: string | null;
+  // Accessibility (PMR), null when unknown
+  entrance_access: "step_free" | "ramp_on_request" | "not_accessible" | null;
+  has_toilets: boolean | null;
+  has_accessible_toilets: boolean | null;
+  accessibility_note: string | null;
   opening_hours: OpeningSlotDataType[] | null;
   opening_hours_note: string | null;
   stops: RestaurantStopDataType[] | null;

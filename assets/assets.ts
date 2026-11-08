@@ -1007,6 +1007,12 @@ export const restaurantServiceOptionLabels: Record<string, string> = {
   delivery: "Livraison",
 };
 
+export const restaurantEntranceAccessLabels: Record<string, string> = {
+  step_free: "Entrée de plain-pied",
+  ramp_on_request: "Rampe d'accès sur demande",
+  not_accessible: "Entrée non accessible en fauteuil",
+};
+
 export const dayNames = [
   "Lundi",
   "Mardi",

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { dayNames } from "@/assets/assets";
+import { dayNames, restaurantEntranceAccessLabels } from "@/assets/assets";
 import Admonition from "@/app/ui/components/Admonition";
 import Icon from "@/app/ui/components/Icon";
 import Tag from "@/app/ui/components/Tag";
@@ -45,6 +45,20 @@ const OpeningHours = ({ slots }: { slots: OpeningSlotDataType[] }) => (
     </tbody>
   </table>
 );
+
+// Toilets as in the app: accessible ones are toilets too
+const toiletsText = (
+  hasToilets: boolean | null,
+  hasAccessibleToilets: boolean | null,
+) => {
+  if (hasAccessibleToilets) return "Toilettes adaptées PMR";
+  if (hasToilets === false) return "Pas de toilettes";
+  if (hasToilets && hasAccessibleToilets === false)
+    return "Toilettes non adaptées PMR";
+  if (hasToilets) return "Toilettes";
+  if (hasAccessibleToilets === false) return "Pas de toilettes adaptées PMR";
+  return null;
+};
 
 const Section = ({
   title,
@@ -99,6 +113,10 @@ const RestaurantDetails = ({ restaurant, cta }: RestaurantDetailsProps) => {
     service_options,
     has_storefront,
     service_area,
+    entrance_access,
+    has_toilets,
+    has_accessible_toilets,
+    accessibility_note,
     opening_hours,
     opening_hours_note,
     stops,
@@ -117,6 +135,9 @@ const RestaurantDetails = ({ restaurant, cta }: RestaurantDetailsProps) => {
   const cover = featured_photo ?? photos[0];
   const otherPhotos = photos.filter((photo) => photo.id !== cover?.id);
   const hasContact = phone || website || facebook || instagram || menu_url;
+  const toilets = toiletsText(has_toilets, has_accessible_toilets);
+  const hasAccessibility =
+    has_storefront && (entrance_access || toilets || accessibility_note);
 
   return (
     <>
@@ -233,6 +254,29 @@ const RestaurantDetails = ({ restaurant, cta }: RestaurantDetailsProps) => {
               )}
             </Section>
           )
+        )}
+
+        {hasAccessibility && (
+          <Section title="Accessibilité" icon="accessibility">
+            <div className="flex flex-col gap-2">
+              {entrance_access && (
+                <p className="inline-flex items-center gap-2">
+                  <Icon name="door-open" className="size-4 shrink-0" />
+                  {restaurantEntranceAccessLabels[entrance_access] ??
+                    entrance_access}
+                </p>
+              )}
+              {toilets && (
+                <p className="inline-flex items-center gap-2">
+                  <Icon name="toilet" className="size-4 shrink-0" />
+                  {toilets}
+                </p>
+              )}
+              {accessibility_note && (
+                <p className="italic">{accessibility_note}</p>
+              )}
+            </div>
+          </Section>
         )}
 
         {hasContact && (
