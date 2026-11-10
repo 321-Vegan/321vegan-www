@@ -20,7 +20,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Découvrez l&apos;histoire de 321 Vegan, l&apos;application créée
               par un végane, pour les véganes.
             </h2>

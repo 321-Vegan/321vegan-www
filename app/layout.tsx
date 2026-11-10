@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter } from "@/app/ui/fonts";
+import { baloo, karla } from "@/app/ui/fonts";
 import { Toaster } from "react-hot-toast";
 import { polyfill } from "interweave-ssr";
 
@@ -25,9 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth" data-scroll-behavior="smooth">
+    <html
+      lang="fr"
+      className={`${karla.variable} ${baloo.variable} scroll-smooth`}
+      data-scroll-behavior="smooth"
+    >
       <body
-        className={`${inter.className} antialiased leading-8 overflow-x-hidden bg-white text-brand-950 `}
+        className={`font-sans antialiased leading-8 overflow-x-hidden bg-white text-ink `}
       >
         {children}
         <Toaster

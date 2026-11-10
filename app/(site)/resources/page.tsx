@@ -21,7 +21,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Découvrez notre sélection de ressources sur le véganisme et
               l&apos;antispécisme
             </h2>
@@ -29,7 +29,7 @@ export default function Page() {
             <div className="border-l-4 border-brand-500 italic my-8 pl-4 lg:pl-8 py-4 mx-4 lg:mx-10 ">
               <dl className="divide-y divide-gray-100">
                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                  <dt className="text-sm/6 font-medium text-gray-900">
+                  <dt className="text-sm/6 font-medium text-ink">
                     Antispécisme
                   </dt>
                   <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
@@ -42,7 +42,7 @@ export default function Page() {
                   </dd>
                 </div>
                 <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                  <dt className="text-sm/6 font-medium text-gray-900">
+                  <dt className="text-sm/6 font-medium text-ink">
                     Véganisme
                   </dt>
                   <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">

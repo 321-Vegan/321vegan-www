@@ -24,7 +24,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               L&apos;appli 321 Vegan vous aide à trouver les marques de
               cosmétiques véganes ET cruelty free
             </h2>
@@ -104,14 +104,14 @@ export default function Page() {
 
           <section>
             <AppStoresCta
-              bgColor="bg-brand-50"
+              bgColor="bg-card"
               titleColor="text-brand-600"
               textColor="text-brand-900"
             />
           </section>
 
           <article id="cosmetics-labels" className="scroll-mt-20">
-            <h2 className="mt-16 mb-12 text-lg font-merriweather">
+            <h2 className="mt-16 mb-12 text-lg font-sans">
               Comparatif des labels vegan et cruelty free pour les
               cosmétiques&nbsp;:
             </h2>
@@ -248,7 +248,7 @@ export default function Page() {
 
           <section>
             <JoinUsCta
-              bgColor="bg-brand-50"
+              bgColor="bg-card"
               titleColor="text-brand-600"
               textColor="text-brand-900"
               btnColor="bg-brand-600 after:bg-brand-600"

@@ -104,7 +104,7 @@ const Navbar = () => {
     >
       <Link href="/" className="cursor-pointer inline-flex items-center gap-1">
         <Logo className="size-8 lg:size-12" />{" "}
-        <span className="text-brand-600 font-extrabold">321 Vegan</span>
+        <span className="font-title text-xl text-brand-600 font-extrabold">321 Vegan</span>
       </Link>
 
       <div className="flex items-center gap-4">

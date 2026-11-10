@@ -45,7 +45,7 @@ const Header = () => {
         Découvrez 321 Vegan&nbsp;!
       </MotionH2>
       <MotionP
-        className="text-lg max-w-2xl mx-auto font-merriweather"
+        className="text-lg max-w-2xl mx-auto font-sans"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}

@@ -16,7 +16,7 @@ export default function Page() {
             <div className="absolute inset-0 bg-linear-to-r from-brand-300 to-brand-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
             <div className="text-white relative px-4 py-10 bg-brand-700 shadow-lg sm:rounded-3xl sm:p-20">
               <header className="mb-12 flex w-full flex-col text-center">
-                <h1 className="text-center text-white mb-4 text-3xl sm:text-5xl font-merriweather">
+                <h1 className="text-center text-white mb-4 text-3xl sm:text-5xl font-title">
                   Contactez-nous
                 </h1>
                 <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-white/90">

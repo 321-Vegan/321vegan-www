@@ -8,7 +8,7 @@ const PartnersSection = async () => {
   if (!partnersData.length) return null;
   return (
     <>
-      <h2 className="my-12 text-lg font-merriweather">
+      <h2 className="my-12 text-lg font-sans">
         Liste de nos partenaires offrant des codes promos&nbsp;:
       </h2>
 

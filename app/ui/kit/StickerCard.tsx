@@ -3,7 +3,7 @@ import CreditLine, { Credit } from "@/app/ui/kit/CreditLine";
 import DownloadButton from "@/app/ui/components/DownloadButton";
 
 export const STICKER_PREVIEW_BOX =
-  "rounded-md bg-brand-50 bg-[radial-gradient(rgba(22,101,52,0.18)_1.5px,transparent_1.5px)] bg-size-[18px_18px] h-56 p-3 flex items-center justify-center overflow-hidden";
+  "rounded-md bg-brand-50 bg-[radial-gradient(rgba(21,134,110,0.18)_1.5px,transparent_1.5px)] bg-size-[18px_18px] h-56 p-3 flex items-center justify-center overflow-hidden";
 
 interface StickerCardProps {
   title: string;

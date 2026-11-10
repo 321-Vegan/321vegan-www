@@ -16,7 +16,7 @@ const AdditiveItem = ({ item }: AdditiveItemProps) => {
             status === "VEGAN"
               ? "bg-brand-100 text-brand-700 border-brand-700"
               : status === "NON_VEGAN"
-                ? "bg-red-100 text-red-700 border-red-700"
+                ? "bg-error-tag text-error-dark border-error-dark"
                 : "bg-orange-100 text-orange-700 border-orange-700"
           } `}
           aria-label={`Consulter en détail l'additif ${e_number}`}
@@ -31,7 +31,7 @@ const AdditiveItem = ({ item }: AdditiveItemProps) => {
               status === "VEGAN"
                 ? "text-brand-500"
                 : status === "NON_VEGAN"
-                  ? "text-red-500"
+                  ? "text-error"
                   : "text-orange-500"
             }`}
           >
@@ -48,7 +48,7 @@ const AdditiveItem = ({ item }: AdditiveItemProps) => {
                   status === "VEGAN"
                     ? "border-brand-500 hover:bg-brand-500 focus:bg-brand-600 active:border-brand-600"
                     : status === "NON_VEGAN"
-                      ? "border-red-500 hover:bg-red-500 focus:bg-red-600 active:border-red-600"
+                      ? "border-error hover:bg-error focus:bg-error-dark active:border-error-dark"
                       : "border-orange-500 hover:bg-orange-500 focus:bg-orange-600 active:border-orange-600"
                 }`}
               >

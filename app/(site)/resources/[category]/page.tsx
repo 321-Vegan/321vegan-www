@@ -50,7 +50,7 @@ export default async function Page({ params }: Props) {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               <Markup content={category.description} />
             </h2>
 

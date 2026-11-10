@@ -32,7 +32,7 @@ const Page = () => {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               N&apos;oubliez plus la prise de votre vitamine B12&nbsp;!
             </h2>
             <div className="flex flex-col lg:flex-row mx-auto overflow-hidden">
@@ -83,7 +83,7 @@ const Page = () => {
           </section>
 
           <article id="vitamin-b12" className="scroll-mt-20">
-            <h2 className="my-12 text-lg font-merriweather">
+            <h2 className="my-12 text-lg font-sans">
               Quelques informations sur la vitamine B12&nbsp;:
             </h2>
             <p className="mb-6 leading-relaxed">

@@ -29,7 +29,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Signalez facilement des problèmes de consommation grâce à notre
               guide pas-à-pas
             </h2>
@@ -73,7 +73,7 @@ export default function Page() {
           </section>
 
           <section>
-            <div className="text-center rounded-xl p-8 shadow-sm bg-brand-50">
+            <div className="text-center rounded-xl p-8 shadow-sm bg-card">
               <h2 className="text-2xl font-bold mb-3 text-brand-600">
                 Notre guide pas-à-pas vous accompagne à chaque étape de la
                 démarche
@@ -88,7 +88,7 @@ export default function Page() {
           </section>
 
           <section id="checklist" className="scroll-mt-20">
-            <h2 className="mt-16 mb-12 text-lg font-merriweather">
+            <h2 className="mt-16 mb-12 text-lg font-sans">
               Liste des éléments requis&nbsp;:
             </h2>
             <p className="md:text-justify text-balance mb-16 leading-relaxed">
@@ -100,7 +100,7 @@ export default function Page() {
           </section>
 
           <section id="messageTemplate" className="scroll-mt-20">
-            <h2 className="mt-16 mb-12 text-lg font-merriweather">
+            <h2 className="mt-16 mb-12 text-lg font-sans">
               Modèles de message à copier&nbsp;:
             </h2>
             <p className="md:text-justify text-balance mb-16 leading-relaxed">
@@ -113,7 +113,7 @@ export default function Page() {
 
           <section>
             <AppStoresCta
-              bgColor="bg-brand-50"
+              bgColor="bg-card"
               titleColor="text-brand-600"
               textColor="text-brand-900"
               wrapperClass="mt-16"
@@ -142,7 +142,7 @@ export default function Page() {
 
           <section>
             <JoinUsCta
-              bgColor="bg-brand-50"
+              bgColor="bg-card"
               titleColor="text-brand-600"
               textColor="text-brand-900"
               wrapperClass="mt-16"

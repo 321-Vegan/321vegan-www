@@ -12,10 +12,10 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden pt-16 pb-32 space-y-24 w-full px-[12%] bg-brand-50 scroll-mt-20"
+      className="relative overflow-hidden pt-16 pb-32 space-y-24 w-full px-[12%] bg-card scroll-mt-20"
     >
       <MotionH2
-        className="text-center mb-2 text-lg text-brand-600 font-merriweather"
+        className="text-center mb-2 text-lg text-brand-600 font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -23,7 +23,7 @@ const TestimonialSection = () => {
         Ce que les utilisateur&middot;ices pensent de 321 Vegan
       </MotionH2>
       <MotionH3
-        className="text-center text-5xl text-brand-900 font-merriweather"
+        className="text-center text-5xl text-brand-900 font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}

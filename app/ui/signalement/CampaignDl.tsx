@@ -23,7 +23,7 @@ const CampaignDl = ({
   return (
     <dl className="grid md:grid-cols-[15rem_1fr] items-center md:items-start gap-6 ">
       <CampaignDt>Problème relevé&nbsp;:</CampaignDt>
-      <dd className="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium leading-7 border border-red-700 bg-red-100 text-red-700 w-full">
+      <dd className="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium leading-7 border border-error-dark bg-error-tag text-error-dark w-full">
         <Markup content={campaignIntro} />
       </dd>
       <CampaignDt>Produit concerné&nbsp;:</CampaignDt>

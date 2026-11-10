@@ -1,5 +1,5 @@
 "use client";
-import { inter } from "@/app/ui/fonts";
+import { baloo, karla } from "@/app/ui/fonts";
 import { ArrowRight } from "lucide-react";
 
 import "./globals.css";
@@ -12,12 +12,15 @@ export default function GlobalError({
   reset: () => void;
 }) {
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html
+      lang="fr"
+      className={`${karla.variable} ${baloo.variable} scroll-smooth`}
+    >
       <head>
         <title>321 Vegan</title>
       </head>
       <body
-        className={`${inter.className} antialiased leading-8 overflow-x-hidden bg-white text-brand-950 `}
+        className={`font-sans antialiased leading-8 overflow-x-hidden bg-white text-ink `}
       >
         <div className="grid h-screen place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
           <div className="text-center">
@@ -29,7 +32,7 @@ export default function GlobalError({
             </header>
 
             <main>
-              <h2 className="mt-6 text-lg font-medium text-pretty sm:text-xl/8 font-merriweather">
+              <h2 className="mt-6 text-lg font-medium text-pretty sm:text-xl/8 font-sans">
                 Nous sommes navré de ce désagrément. Veuillez réessayer ou
                 contacter le support technique si le problème persiste.
               </h2>

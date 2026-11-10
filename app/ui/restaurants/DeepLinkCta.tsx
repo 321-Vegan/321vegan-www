@@ -10,7 +10,7 @@ interface DeepLinkCtaProps {
 
 const DeepLinkCta = ({ path, children }: DeepLinkCtaProps) => {
   return (
-    <div className="flex flex-col gap-4 rounded-xl border border-brand-200 bg-brand-50 p-5">
+    <div className="flex flex-col gap-4 rounded-xl border border-secondary/40 bg-card p-5">
       <p className="leading-relaxed text-brand-900">{children}</p>
       <OpenInAppButton path={path} />
       <div className="flex flex-col sm:flex-row items-center gap-2">

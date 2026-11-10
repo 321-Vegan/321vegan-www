@@ -1,6 +1,6 @@
 export function PartnerSkeleton() {
   return (
-    <div className="bg-brand-50 animate-pulse shadow-sm rounded-lg h-full">
+    <div className="bg-card animate-pulse shadow-sm rounded-lg h-full">
       <div className="flex flex-col gap-4 sm:flex-row items-start px-6 py-5 h-full">
         <div className="flex items-center justify-center min-w-40">
           <div className="rounded-xl bg-brand-100 h-40 w-40"></div>

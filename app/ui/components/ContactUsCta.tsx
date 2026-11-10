@@ -14,7 +14,7 @@ interface ContactUsCtaProps extends PropsWithChildren {
 
 const ContactUsCta = ({
   title,
-  bgColor = "bg-brand-50",
+  bgColor = "bg-card",
   titleColor = "text-brand-900",
   textColor = "text-brand-700",
   btnColor = "bg-brand-700 after:bg-brand-700",

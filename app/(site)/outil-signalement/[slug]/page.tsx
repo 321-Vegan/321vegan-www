@@ -46,7 +46,7 @@ export default async function Page({ params }: Props) {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               <Markup content={campaign.campaignTitle} />
             </h2>
 
@@ -69,7 +69,7 @@ export default async function Page({ params }: Props) {
           </section>
 
           <section>
-            <h2 className="mt-16 mb-12 text-lg font-merriweather">
+            <h2 className="mt-16 mb-12 text-lg font-sans">
               Éléments pour le signalement&nbsp;:
             </h2>
             <p className="md:text-justify text-balance mb-16 leading-relaxed">
@@ -77,7 +77,7 @@ export default async function Page({ params }: Props) {
               signalement.
             </p>
 
-            <div className="text-center rounded-xl p-8 shadow-sm bg-brand-50">
+            <div className="text-center rounded-xl p-8 shadow-sm bg-card">
               <CampaignDl campaign={campaign} />
               <hr className="border-0 border-b border-brand-500 mt-10 mb-8 mx-8" />
               <p className="mb-6 text-brand-900 leading-relaxed">
@@ -99,7 +99,7 @@ export default async function Page({ params }: Props) {
 
           <section className="mt-16 ">
             <AppStoresCta
-              bgColor="bg-brand-50"
+              bgColor="bg-card"
               titleColor="text-brand-600"
               textColor="text-brand-900"
             />

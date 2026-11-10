@@ -23,7 +23,7 @@ const Page = () => {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Trouvez facilement vos produits vegan préférés&nbsp;!
             </h2>
             <div className="flex flex-col lg:flex-row mx-auto overflow-hidden">
@@ -71,7 +71,7 @@ const Page = () => {
           </section>
 
           <section>
-            <h2 className="my-12 text-lg font-merriweather">
+            <h2 className="my-12 text-lg font-sans">
               Comment utiliser la carte interactive végane&nbsp;:
             </h2>
             <MapFeatures />

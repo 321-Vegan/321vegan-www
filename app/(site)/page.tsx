@@ -14,9 +14,9 @@ export default function Page() {
         <FeatureSection />
         <WaveDivider previousColor="bg-brand-900" nextColor="text-white" />
         <ContributionSection />
-        <WaveDivider nextColor="text-brand-50" />
+        <WaveDivider nextColor="text-card" />
         <TestimonialSection />
-        <WaveDivider previousColor="bg-brand-50" />
+        <WaveDivider previousColor="bg-card" />
         <FaqSection />
       </main>
     </>

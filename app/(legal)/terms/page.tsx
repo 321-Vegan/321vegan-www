@@ -15,13 +15,13 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <header>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">
+            <h1 className="text-3xl font-bold text-ink mb-8">
               Mentions légales
             </h1>
           </header>
           <main>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 1. Édition du site
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -85,7 +85,7 @@ export default function Page() {
               </div>
             </section>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 2. Propriété intellectuelle et contrefaçons
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -125,7 +125,7 @@ export default function Page() {
               </div>
             </section>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 3. Limitations de responsabilité
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -172,7 +172,7 @@ export default function Page() {
               </div>
             </section>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 4. CNIL et gestion des données personnelles
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -216,7 +216,7 @@ export default function Page() {
               </div>
             </section>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 5. Liens hypertextes et cookies
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -260,7 +260,7 @@ export default function Page() {
               </div>
             </section>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 6. Droit applicable et attribution de juridiction
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">

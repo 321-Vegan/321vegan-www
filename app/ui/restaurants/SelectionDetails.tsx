@@ -25,7 +25,7 @@ const SelectionItem = ({
   <li>
     <Link
       href={restaurantPath(restaurant.id, restaurant.name)}
-      className="group flex gap-4 rounded-xl p-4 bg-brand-50 shadow-sm hover:-translate-y-1 transition-all duration-500"
+      className="group flex gap-4 rounded-xl p-4 bg-card shadow-sm hover:-translate-y-1 transition-all duration-500"
     >
       {restaurant.featured_photo ? (
         <Image
@@ -64,7 +64,7 @@ const SelectionItem = ({
           <blockquote className="text-sm leading-relaxed text-gray-700 border-l-2 border-brand-300 pl-3">
             {author_rating && (
               <span
-                className="block text-amber-500"
+                className="block text-secondary"
                 aria-label={`Noté ${author_rating} sur 5 par ${ownerNickname}`}
               >
                 {"★".repeat(author_rating)}
@@ -108,7 +108,7 @@ const SelectionDetails = ({ selection, cta }: SelectionDetailsProps) => {
           <h1 className="mb-1 text-5xl text-brand-600 font-extrabold leading-tight">
             {title}
           </h1>
-          <p className="text-lg font-merriweather">
+          <p className="text-lg font-sans">
             Une sélection de {owner_nickname} &middot; {items.length}{" "}
             {items.length > 1 ? "lieux" : "lieu"}
           </p>

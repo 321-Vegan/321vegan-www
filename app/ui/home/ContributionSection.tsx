@@ -15,7 +15,7 @@ const ContributionSection = () => {
       className="w-full pt-16 pb-32 space-y-24 px-[12%] scroll-mt-20"
     >
       <MotionH2
-        className="text-center mb-2 text-lg text-brand-500 font-merriweather"
+        className="text-center mb-2 text-lg text-brand-500 font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -23,7 +23,7 @@ const ContributionSection = () => {
         Un projet collaboratif
       </MotionH2>
       <MotionH3
-        className="text-center text-5xl text-brand-600 font-merriweather"
+        className="text-center text-5xl text-brand-600 font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}

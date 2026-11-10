@@ -24,7 +24,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Avec les codes promos de nos partenaires, vous bénéficiez de
               réductions dans leurs boutiques en ligne.
             </h2>
@@ -64,7 +64,7 @@ export default function Page() {
                 </p>
                 <section className="lg:mt-auto">
                   <AppStoresCta
-                    bgColor="bg-brand-50"
+                    bgColor="bg-card"
                     titleColor="text-brand-600"
                     textColor="text-brand-900"
                   />

@@ -86,7 +86,7 @@ const Sitemap = () => {
               </ul>
             </div>
             <div className="w-full  text-left">
-              <div className="text-xl text-gray-900 font-medium mb-7">
+              <div className="text-xl text-ink font-medium mb-7">
                 Ressources
               </div>
               <ul className="  transition-all duration-500">

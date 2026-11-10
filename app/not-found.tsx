@@ -13,7 +13,7 @@ function NotFound() {
         </header>
 
         <main>
-          <h2 className="mt-6 text-lg font-medium text-pretty sm:text-xl/8 font-merriweather">
+          <h2 className="mt-6 text-lg font-medium text-pretty sm:text-xl/8 font-sans">
             Désolé, nous n&apos;avons pas trouvé la page que vous recherchez.
           </h2>
 

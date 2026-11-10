@@ -95,7 +95,7 @@ const Page = async ({ params }: Props) => {
             </header>
 
             <main>
-              <h2 className="mb-8 text-lg font-merriweather">
+              <h2 className="mb-8 text-lg font-sans">
                 On vous a partagé un restaurant vegan&nbsp;!
               </h2>
               <p className="mb-4 leading-relaxed">

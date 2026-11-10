@@ -30,8 +30,8 @@ const Testimonial = ({
           {Array.from({ length: 5 }, (_, i) => i).map((i) => (
             <svg
               key={`rate-${i}`}
-              className={clsx("w-4 stroke-yellow-400", {
-                "fill-yellow-400": i + 1 <= rate,
+              className={clsx("w-4 stroke-secondary", {
+                "fill-secondary": i + 1 <= rate,
               })}
               viewBox="0 0 14 13"
               fill="none"

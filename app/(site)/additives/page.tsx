@@ -23,7 +23,7 @@ export default function Page() {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Consultez rapidement si un additif est végétalien grâce à notre
               base de données d&apos;additifs
             </h2>

@@ -8,7 +8,7 @@ interface FaqProps {
 
 const Faq = ({ faq: { title, description } }: FaqProps) => {
   return (
-    <div className="py-5 bg-brand-50 rounded-xl shadow-md">
+    <div className="py-5 bg-card rounded-xl shadow-md">
       <details className="group p-6 text-left">
         <summary className="grid grid-cols-[1fr_2rem] list-none marker:hidden text-lg font-semibold text-brand-700 cursor-pointer">
           <span> {title}</span>

@@ -1,23 +1,42 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-inter: "Inter", sans-serif;
-  --font-merriweather: "Merriweather", serif;
+  /* Same fonts as the app: Karla (body), Baloo 2 (titles). See app/ui/fonts.ts. */
+  --font-sans: var(--font-karla), ui-sans-serif, system-ui, sans-serif;
+  --font-title: var(--font-baloo), ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #f1f8f2;
-  --color-brand-100: #ddeede;
-  --color-brand-200: #bedcc2;
-  --color-brand-300: #92c39c;
-  --color-brand-400: #5b9b6a;
-  --color-brand-500: #428754;
-  --color-brand-600: #306b41;
-  --color-brand-700: #275536;
-  --color-brand-800: #21442c;
-  --color-brand-900: #1b3925;
-  --color-brand-950: #0f1f15;
+  /* Primary: shades built around brand-500, the green of the app/logo. */
+  --color-brand-50: #effaf6;
+  --color-brand-100: #d8f3ea;
+  --color-brand-200: #b3e6d6;
+  --color-brand-300: #7fd2bc;
+  --color-brand-400: #26a085;
+  --color-brand-500: #15866e;
+  --color-brand-600: #116d5a;
+  --color-brand-700: #10584a;
+  --color-brand-800: #0f473c;
+  --color-brand-900: #0d3b33;
+  --color-brand-950: #05221d;
+
+  /* Same values as flutter_app/lib/themes/app_colors.dart (321vegan-app). */
+  --color-secondary: #f5bc28;
+  --color-error: #d6484b;
+  --color-error-dark: #b3373a;
+  --color-error-tag: #fbe9e9;
+  --color-card: #fff8e4;
+  --color-ink: #313337;
 
   --shadow-brand: 2px 2px 0 var(--color-brand-600);
   --shadow-light: 4px 4px 0 #fff;
   --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
   --plant-marker: "🌱";
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-baloo), ui-sans-serif, system-ui, sans-serif;
+  }
 }

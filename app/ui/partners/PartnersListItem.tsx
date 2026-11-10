@@ -20,7 +20,7 @@ const PartnersListItem = ({
   },
 }: PartnersListItemProps) => {
   return (
-    <div className="bg-brand-50 shadow-sm rounded-lg hover:-translate-y-1 hover:scale-[1.1] transition-all duration-500 h-full group">
+    <div className="bg-card shadow-sm rounded-lg hover:-translate-y-1 hover:scale-[1.1] transition-all duration-500 h-full group">
       <div className="flex flex-col gap-4 sm:flex-row items-start px-6 py-5 h-full">
         <div className="flex items-center justify-center min-w-40">
           <Image

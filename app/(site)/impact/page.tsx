@@ -22,7 +22,7 @@ export default function Page() {
         </header>
         <main>
           <article>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Estimation de l&apos;impact du véganisme sur les animaux et
               l&apos;environnement.
             </h2>
@@ -103,7 +103,7 @@ export default function Page() {
           </section>
 
           <section id="sources" className="scroll-mt-20">
-            <h2 className="mt-16 mb-12 text-lg font-merriweather">
+            <h2 className="mt-16 mb-12 text-lg font-sans">
               L&apos;appli 321 Vegan vous aide à mesurer votre impact sur les
               animaux et l&apos;environnement grâce aux études suivantes&nbsp;:
             </h2>

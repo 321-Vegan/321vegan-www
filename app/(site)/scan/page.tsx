@@ -25,7 +25,7 @@ const Page = () => {
 
         <main>
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Idéal pour vos courses, même dans les zones sans réseau&nbsp;!
             </h2>
             <div className="flex flex-col lg:flex-row mx-auto overflow-hidden">
@@ -71,7 +71,7 @@ const Page = () => {
           </section>
 
           <section>
-            <h2 className="my-12 text-lg font-merriweather">
+            <h2 className="my-12 text-lg font-sans">
               Comment utiliser le scanner de codes-barres 321 Vegan&nbsp;:
             </h2>
 

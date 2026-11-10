@@ -15,7 +15,7 @@ const FaqSection = () => {
       className="relative overflow-hidden bg-brand-900 pt-16 pb-32 space-y-24 w-full px-[12%] scroll-mt-20"
     >
       <MotionH2
-        className="text-center mb-2 text-lg text-white/90 font-merriweather"
+        className="text-center mb-2 text-lg text-white/90 font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -23,7 +23,7 @@ const FaqSection = () => {
         Réponses aux questions courantes
       </MotionH2>
       <MotionH3
-        className="text-center text-5xl text-white font-merriweather"
+        className="text-center text-5xl text-white font-title"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}

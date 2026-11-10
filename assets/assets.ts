@@ -67,6 +67,7 @@ import anola from "./resources/others/anola.webp";
 import bernier from "./resources/others/logo-bernier.webp";
 import projetMeduses from "./resources/others/pojet-meduses.webp";
 
+import antispe from "./resources/podcasts/antispe.webp";
 import lasVeganParano from "./resources/podcasts/las-vegan-parano.webp";
 import leMondeApresLeSpecisme from "./resources/podcasts/le-monde-apres-le-specisme.webp";
 import manje from "./resources/podcasts/manje.webp";
@@ -754,6 +755,14 @@ export const resourcesData: ResourcesDataType[] = [
       "Gardiens des félins est une association franco-suisse qui dénonce les réseaux de torture animale dans le monde. Leur campagne sur les réseaux de torture de chats et autres animaux a commencé en soutien au travail déjà en cours par Feline Guardians, un collectif international qui appelle à une loi anti-cruauté animale en Chine.",
     link: "https://www.instagram.com/gardiensdesfelins/",
     logo: gardiensDesFelins,
+  },
+  {
+    category_slug: "podcasts",
+    name: "Antispé",
+    description:
+      "Le podcast sur l'antispécisme animé par Laury Dr, militante antispéciste et activiste de rue. Au fil d'entretiens avec des militant&middot;es et des figures du mouvement, elle explore leurs parcours, leurs déclics et leurs méthodes pour rendre le discours abolitionniste accessible au plus grand nombre.",
+    link: "https://li.sten.to/antispe",
+    logo: antispe,
   },
   {
     category_slug: "podcasts",

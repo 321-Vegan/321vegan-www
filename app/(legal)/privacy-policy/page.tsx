@@ -15,14 +15,14 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <header>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">
+            <h1 className="text-3xl font-bold text-ink mb-8">
               Politique de confidentialité
             </h1>
           </header>
 
           <main>
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 1. Préambule
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -105,7 +105,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 2. Principes relatifs à la collecte et au traitement des données
                 personnelles
               </h2>
@@ -283,7 +283,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 3. Consentement
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -300,17 +300,17 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 4. Données à caractère personnel collectées et traitées dans le
                 cadre de la navigation sur le site
               </h2>
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">
+                <h3 className="text-lg text-ink mb-4">
                   4.1 Données collectées
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h4 className="font-medium text-gray-900 mb-2">
+                    <h4 className="font-medium text-ink mb-2">
                       Données collectées automatiquement
                     </h4>
                     <p className="text-gray-600 leading-relaxed">
@@ -318,7 +318,7 @@ export default function Page() {
                     </p>
                   </div>
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h4 className="font-medium text-gray-900 mb-2">
+                    <h4 className="font-medium text-ink mb-2">
                       Données collectées de façon non automatique
                     </h4>
                     <p className="text-gray-600 leading-relaxed">
@@ -352,7 +352,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">
+                <h3 className="text-lg text-ink mb-4">
                   4.2 Comment sont utilisées les données personnelles
                   collectées&nbsp;?
                 </h3>
@@ -374,11 +374,11 @@ export default function Page() {
                 </p>
               </div>
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">
+                <h3 className="text-lg text-ink mb-4">
                   4.3 Avec qui sont partagées les données personnelles
                   collectées&nbsp;?
                 </h3>
-                <h4 className="font-medium text-gray-900 mb-2">
+                <h4 className="font-medium text-ink mb-2">
                   Tierces parties
                 </h4>
                 <p className="leading-relaxed">
@@ -387,7 +387,7 @@ export default function Page() {
                   raisonnablement nécéssaire pour atteindre l&apos;objectif
                   donné.
                 </p>
-                <h4 className="font-medium text-gray-900 mb-2">
+                <h4 className="font-medium text-ink mb-2">
                   Autres divulgations
                 </h4>
                 <p className="leading-relaxed">
@@ -437,7 +437,7 @@ export default function Page() {
               </div>
 
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">
+                <h3 className="text-lg text-ink mb-4">
                   4.4 Combien de temps sont conservées les données personnelles
                   collectées&nbsp;?
                 </h3>
@@ -451,7 +451,7 @@ export default function Page() {
               </div>
 
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">
+                <h3 className="text-lg text-ink mb-4">
                   4.5 Comment sont protégées les données personnelles&nbsp;?
                 </h3>
                 <p className="leading-relaxed">
@@ -481,7 +481,7 @@ export default function Page() {
               </div>
 
               <div className="prose text-gray-600 mb-5">
-                <h3 className="text-lg text-gray-800 mb-4">4.6 Mineurs</h3>
+                <h3 className="text-lg text-ink mb-4">4.6 Mineurs</h3>
                 <p className="leading-relaxed">
                   Le RGPD pécise que les personnes de moins de 15 ans sont
                   considérées comme des mineurs aux fins de la collecte de
@@ -493,7 +493,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 5. Vos droits en tant qu&apos;utilisateur&middot;ice
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -564,7 +564,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 6. Comment modifier, supprimer ou contester les données
                 recuillies&nbsp;?
               </h2>
@@ -582,7 +582,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 7. Politique sur les cookies
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -599,7 +599,7 @@ export default function Page() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="font-medium text-gray-900 mb-2">
+                    <h3 className="font-medium text-ink mb-2">
                       Cookies fonctionnels
                     </h3>
                     <p className="text-gray-600">
@@ -621,7 +621,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 8. Modifications
               </h2>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -641,7 +641,7 @@ export default function Page() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              <h2 className="text-xl font-semibold text-ink mb-4">
                 4. Contact
               </h2>
               <div className="bg-gray-50 rounded-lg p-6 flex flex-col sm:flex-row items-center sm:justify-between leading-relaxed">

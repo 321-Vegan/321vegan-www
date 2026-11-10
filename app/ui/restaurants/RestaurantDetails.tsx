@@ -157,7 +157,7 @@ const RestaurantDetails = ({ restaurant, cta }: RestaurantDetailsProps) => {
             {name}
           </h1>
           {(city || service_area) && (
-            <p className="text-lg font-merriweather">
+            <p className="text-lg font-sans">
               {has_storefront ? city : service_area}
             </p>
           )}

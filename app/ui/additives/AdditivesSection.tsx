@@ -31,7 +31,7 @@ const AdditivesSection = async () => {
     <Modal>
       <>
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 my-12">
-          <h2 className="text-lg font-merriweather">
+          <h2 className="text-lg font-sans">
             Liste des additifs par catégories&nbsp;:
           </h2>
 
@@ -74,7 +74,7 @@ const AdditivesSection = async () => {
           </div>
         </div>
 
-        <div className="w-full bg-red-600/60 rounded-xl shadow-sm p-8">
+        <div className="w-full bg-error rounded-xl shadow-sm p-8">
           <div className="flex flex-col text-center">
             <h3 className="text-xl md:text-3xl font-bold tracking-tight text-white p-4 flex items-center justify-center gap-3">
               <CircleX className="size-10" aria-hidden="true" />

@@ -18,7 +18,7 @@ const MapFeatures = () => {
                   </span>
                 </div>
               </div>
-              <h3 className="font-merriweather text-white text-lg md:text-xl font-semibold text-charcoal mb-3 mt-10 md:mt-20 ">
+              <h3 className="font-title text-white text-lg md:text-xl font-semibold text-charcoal mb-3 mt-10 md:mt-20 ">
                 {title}
               </h3>
               <p className="text-white/90 text-sm md:text-base leading-relaxed mb-6">

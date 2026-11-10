@@ -15,7 +15,7 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <header>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">
+            <h1 className="text-3xl font-bold text-ink mb-2">
               Conditions générales d&apos;utilisation & Politique de
               confidentialité de l&apos;application
             </h1>
@@ -32,7 +32,7 @@ export default function Page() {
             </h2>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 1. Présentation
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -50,7 +50,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 2. Utilisation de l&apos;application
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -74,7 +74,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 3. Abonnements auto-renouvelables
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -160,7 +160,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 4. Droit de rétractation
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -188,7 +188,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 5. Âge minimum et capacité à contracter
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -206,7 +206,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 6. Compte utilisateur
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -219,7 +219,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 7. Contributions des utilisateur&middot;ice&middot;s
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -344,7 +344,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 8. Contenu et propriété intellectuelle
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -362,7 +362,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 9. Limitation de responsabilité
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -401,7 +401,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 10. Résiliation et suspension du compte
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -424,7 +424,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 11. Dispositions spécifiques à l&apos;App Store (Apple)
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -533,7 +533,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 12. Droit applicable et juridiction compétente
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -553,7 +553,7 @@ export default function Page() {
             </section>
 
             <section className="mb-10">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 13. Modification des conditions
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -572,7 +572,7 @@ export default function Page() {
             </h2>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 1. Collecte d&apos;informations
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -826,7 +826,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 2. Utilisation des informations
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -889,7 +889,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 3. Partenariats et données anonymisées
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -906,7 +906,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 4. Vos droits
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -978,7 +978,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 5. Conservation des données
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -997,7 +997,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 6. Cookies et technologies similaires
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -1011,7 +1011,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 7. Sécurité
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -1025,7 +1025,7 @@ export default function Page() {
             </section>
 
             <section className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 8. Modifications
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
@@ -1038,7 +1038,7 @@ export default function Page() {
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              <h3 className="text-xl font-semibold text-ink mb-4">
                 9. Contact
               </h3>
               <div className="bg-gray-50 rounded-lg p-6 flex flex-col sm:flex-row items-center sm:justify-between leading-relaxed">

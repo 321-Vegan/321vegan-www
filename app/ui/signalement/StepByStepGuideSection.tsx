@@ -251,7 +251,7 @@ const StepByStepGuideSection = ({
   const steps: StepDataType[] = buildSteps(campaign);
   return (
     <article id="guide" className={`scroll-mt-20 ${wrapperClass} `}>
-      <h2 className="mt-16 mb-12 text-lg font-merriweather">Guide pas-à-pas</h2>
+      <h2 className="mt-16 mb-12 text-lg font-sans">Guide pas-à-pas</h2>
       <p className="mb-16 leading-relaxed">
         Suivez ces étapes depuis Signal&nbsp;Conso pour soumettre votre
         signalement en moins de 10 minutes.

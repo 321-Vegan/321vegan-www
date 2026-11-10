@@ -16,7 +16,7 @@ const CampaignShareCta = ({ wrapperClass = "" }: CampaignShareCtaProps) => {
 
   return (
     <div
-      className={`text-center rounded-xl p-8 shadow-sm bg-brand-50 ${wrapperClass}`}
+      className={`text-center rounded-xl p-8 shadow-sm bg-card ${wrapperClass}`}
     >
       <h2 className="text-2xl font-bold mb-3 text-brand-600">
         Aidez-nous à suivre les résultats&nbsp;!

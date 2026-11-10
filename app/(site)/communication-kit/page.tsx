@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 };
 
 const brandColors = [
-  { hex: "#166534", name: "Vert principal" },
-  { hex: "#4CAF71", name: "Vert secondaire" },
-  { hex: "#F5F5F4", name: "Blanc", light: true },
-  { hex: "#FFDE59", name: "Moutarde", light: true },
-  { hex: "#1C1917", name: "Noir" },
+  { hex: "#15866E", name: "Vert principal" },
+  { hex: "#F5BC28", name: "Jaune secondaire", light: true },
+  { hex: "#D6484B", name: "Rouge" },
+  { hex: "#FFF8E4", name: "Crème", light: true },
+  { hex: "#313337", name: "Noir" },
 ];
 
 const logoCredit = {
@@ -94,7 +94,7 @@ export default function Page() {
 
         <main className="flex flex-col gap-16">
           <section>
-            <h2 className="mb-12 text-lg font-merriweather">
+            <h2 className="mb-12 text-lg font-sans">
               Vous souhaitez partager l&apos;appli&nbsp;? Notre kit de
               communication est à votre disposition
             </h2>
@@ -140,7 +140,7 @@ export default function Page() {
           <section aria-labelledby="visuels-heading" className="scroll-mt-20">
             <h2
               id="visuels-heading"
-              className="text-2xl font-semibold text-brand-600 my-8 font-merriweather"
+              className="text-2xl font-semibold text-brand-600 my-8 font-title"
             >
               Visuels et logos
             </h2>
@@ -182,7 +182,7 @@ export default function Page() {
           <section aria-labelledby="stickers-heading" className="scroll-mt-20">
             <h2
               id="stickers-heading"
-              className="text-2xl font-semibold text-brand-600 my-8 font-merriweather"
+              className="text-2xl font-semibold text-brand-600 my-8 font-title"
             >
               Stickers
             </h2>
@@ -203,7 +203,7 @@ export default function Page() {
           <section aria-labelledby="palette-heading" className="scroll-mt-20">
             <h2
               id="palette-heading"
-              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-merriweather"
+              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-title"
             >
               Palette de couleurs
             </h2>
@@ -220,7 +220,7 @@ export default function Page() {
           <section aria-labelledby="textes-heading" className="scroll-mt-20">
             <h2
               id="textes-heading"
-              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-merriweather"
+              className="text-2xl font-semibold text-brand-600 mt-16 mb-8 font-title"
             >
               Textes à copier-coller
             </h2>
