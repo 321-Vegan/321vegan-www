@@ -1,11 +1,13 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import ContactForm from "@/app/ui/contact/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact",
   description:
     "Une question, une remarque, un commentaire ? Notre communauté se tient à votre disposition pour répondre à toutes vos questions.",
-};
+  path: "/contact",
+});
 
 export default function Page() {
   return (

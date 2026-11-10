@@ -1,15 +1,17 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { mockups } from "@/assets/assets";
 import Image from "next/image";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 import MapFeatures from "@/app/ui/map/MapFeatures";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Carte vegan",
   description:
     "Trouvez facilement dans quels magasins sont vendus vos produits vegan préférés grâce à notre carte interactive.",
-};
+  path: "/carte-interactive",
+});
 
 const Page = () => {
   return (

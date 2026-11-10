@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 import Tag from "@/app/ui/components/Tag";
@@ -7,11 +8,12 @@ import SignalConsoBtns from "@/app/ui/signalement/SignalConsoBtns";
 import SignalementChecklist from "@/app/ui/signalement/SignalementChecklist";
 import TemplateMessageList from "@/app/ui/signalement/TemplateMessageList";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Outil de signalement Signal Conso",
   description:
     "Signalez facilement des problèmes de consommation et aidez à améliorer la protection des consommateurs grâce à notre guide pas-à-pas.",
-};
+  path: "/outil-signalement",
+});
 
 export default function Page() {
   return (

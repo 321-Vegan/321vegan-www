@@ -1,13 +1,15 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import ResourceCategoriesList from "@/app/ui/resources/ResourceCategoriesList";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Ressources antispécistes",
   description:
     "Associations, créatrices et créateurs de contenu, études scientifiques, podcasts ou blogs, découvrez notre sélection de ressources sur le véganisme et l'antispécisme.",
-};
+  path: "/ressources",
+});
 
 export default function Page() {
   return (

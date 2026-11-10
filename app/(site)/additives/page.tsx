@@ -1,15 +1,17 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { mockups } from "@/assets/assets";
 import Image from "next/image";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import AdditivesSection from "@/app/ui/additives/AdditivesSection";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Vérification d'additifs",
   description:
     "Vérifiez rapidement si un additif est végétalien grâce à notre base de données d'additifs.",
-};
+  path: "/verification-d-additifs",
+});
 
 export default function Page() {
   return (

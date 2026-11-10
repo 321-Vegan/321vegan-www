@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { notFound } from "next/navigation";
 import { resourceCategoriesData, resourcesData } from "@/assets/assets";
 import { Markup } from "interweave";
@@ -23,10 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category: slug } = await params;
   const category = resourceCategoriesData.find((c) => c.slug === slug);
   if (!category) return {};
-  return {
+  return pageMetadata({
     title: `Catégorie "${category.name}"`,
     description: category.description,
-  };
+    path: `/ressources/${slug}`,
+  });
 }
 
 export default async function Page({ params }: Props) {

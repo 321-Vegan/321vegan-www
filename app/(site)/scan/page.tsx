@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { mockups } from "@/assets/assets";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -7,11 +8,12 @@ import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 import HowDoesItWork from "@/app/ui/scan/HowDoesItWork";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Scanner végane",
   description:
     "Grâce à l'appli 321 Vegan, scannez les codes barres des produits pour savoir en un clin d'œil s'ils sont véganes. Les arômes naturels, additifs douteux, ingrédients inconnus, ... ne sont plus un problème !",
-};
+  path: "/scanner-vegan",
+});
 
 const Page = () => {
   return (

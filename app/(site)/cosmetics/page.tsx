@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { ReactNode } from "react";
 import { mockups, cosmeticsSourcesData } from "@/assets/assets";
 import Image from "next/image";
@@ -6,11 +7,12 @@ import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import LabelComparisonTable from "@/app/ui/cosmetics/LabelComparisonTable";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Vérification de cosmétiques",
   description:
     "Trouvez des marques de cosmétiques véganes ET cruelty free grâce à l'appli 321 Vegan.",
-};
+  path: "/verification-de-cosmetiques",
+});
 
 export default function Page() {
   return (

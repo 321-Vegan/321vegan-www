@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { socialNetworkLinks } from "@/assets/assets";
 import Link from "next/link";
 import ContactUsCta from "@/app/ui/components/ContactUsCta";
@@ -10,11 +11,12 @@ import StickerCard from "@/app/ui/kit/StickerCard";
 import StickerCtaCard from "@/app/ui/kit/StickerCtaCard";
 import stickerVache from "@/public/kit/stickers/sticker-vache.png";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Kit de communication",
   description:
     "Téléchargez les ressources visuelles de 321 Vegan et copiez des textes prêts à l'emploi pour parler de l'appli autour de vous.",
-};
+  path: "/kit-de-communication",
+});
 
 const brandColors = [
   { hex: "#15866E", name: "Vert principal" },

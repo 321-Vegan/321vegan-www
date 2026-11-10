@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import Image from "next/image";
 
 import { mockups } from "@/assets/assets";
@@ -6,11 +7,12 @@ import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import ContactUsCta from "@/app/ui/components/ContactUsCta";
 import PartnersSection from "@/app/ui/partners/PartnersSection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Nos partenaires",
   description:
     "Avec les codes promos de nos partenaires, vous bénéficiez de réductions lors de vos achats dans leurs boutiques en ligne de produits alimentaires, vêtements, accessoires et cosmétiques véganes.",
-};
+  path: "/partenaires",
+});
 
 export default function Page() {
   return (

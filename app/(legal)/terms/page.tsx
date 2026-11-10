@@ -1,13 +1,15 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { owner } from "@/assets/assets";
 import { Mail } from "lucide-react";
 import Link from "next/link";
 import Admonition from "@/app/ui/components/Admonition";
 import ObfuscateEmailAddress from "@/app/ui/components/ObfuscateEmailAddress";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Mentions légales",
-};
+  path: "/mentions-legales",
+});
 
 export default function Page() {
   return (

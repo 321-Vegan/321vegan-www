@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { mockups } from "@/assets/assets";
 import {
   ArrowDown,
@@ -14,11 +15,12 @@ import Admonition from "@/app/ui/components/Admonition";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Vitamine B12",
   description:
     "Configurez un rappel pour la prise de votre vitamine B12 directement depuis l'aplication afin de ne plus l'oublier !.",
-};
+  path: "/rappel-b12",
+});
 
 const Page = () => {
   return (

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { notFound } from "next/navigation";
 import { campaigns } from "@/assets/campaigns";
 import { Markup } from "interweave";
@@ -20,10 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const campaign = campaigns.find((c) => c.slug === slug);
   if (!campaign) return {};
-  return {
+  return pageMetadata({
     title: `Signaler ${campaign.productName} — ${campaign.brand}`,
     description: campaign.campaignIntro,
-  };
+    path: `/outil-signalement/${slug}`,
+  });
 }
 
 export default async function Page({ params }: Props) {

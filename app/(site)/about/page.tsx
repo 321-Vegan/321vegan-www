@@ -1,12 +1,14 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import Image from "next/image";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "À propos",
   description:
     "Découvrez l'histoire de 321 Vegan, l'application de scanner de codes-barres créée par un végane, pour les véganes.",
-};
+  path: "/a-propos",
+});
 
 export default function Page() {
   return (

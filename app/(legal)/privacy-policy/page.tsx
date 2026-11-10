@@ -1,13 +1,15 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { owner } from "@/assets/assets";
 import { Check, Mail } from "lucide-react";
 import Link from "next/link";
 import Admonition from "@/app/ui/components/Admonition";
 import ObfuscateEmailAddress from "@/app/ui/components/ObfuscateEmailAddress";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
-};
+  path: "/politique-de-confidentialite",
+});
 
 export default function Page() {
   return (

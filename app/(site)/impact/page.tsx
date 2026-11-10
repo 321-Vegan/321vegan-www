@@ -1,15 +1,17 @@
 import { Metadata } from "next";
+import { pageMetadata } from "@/app/lib/metadata";
 import { mockups } from "@/assets/assets";
 import Image from "next/image";
 import AppStoresCta from "@/app/ui/components/AppStoresCta";
 import JoinUsCta from "@/app/ui/components/JoinUsCta";
 import SourcesList from "@/app/ui/impact/SourcesList";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Suivi d'impact",
   description:
     "Mesurez l'impact de votre véganisme sur les animaux et l’environnement grâce à notre calculatrice végane.",
-};
+  path: "/suivi-d-impact",
+});
 
 export default function Page() {
   return (
