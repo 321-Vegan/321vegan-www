@@ -42,6 +42,7 @@ const JoinUsCta = ({
         )}
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+        {/* Discord désactivé pour le moment
         <a
           href={socialNetworkLinks.discord}
           target="_blank"
@@ -57,6 +58,7 @@ const JoinUsCta = ({
             className="w-4 h-3"
           />
         </a>
+        */}
         <a
           href={socialNetworkLinks.buymeacoffee}
           target="_blank"

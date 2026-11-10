@@ -38,6 +38,7 @@ const Footer = () => {
               @321vegan.app
             </span>
           </a>
+          {/* Discord désactivé pour le moment
           <div className="h-4 border-l border-gray-400"></div>
           <a
             href={socialNetworkLinks.discord}
@@ -57,6 +58,7 @@ const Footer = () => {
               321Vegan
             </span>
           </a>
+          */}
           <div className="h-4 border-l border-gray-400"></div>
           <a
             href={socialNetworkLinks.github}

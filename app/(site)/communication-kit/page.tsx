@@ -167,7 +167,9 @@ export default function Page() {
                 className="pb-1 inline-flex items-center gap-2 border-b-2 border-brand-600 cursor-pointer hover:shadow-[0_1rem_2rem] hover:bg-brand-600 hover:text-white hover:-translate-y-1 focus:bg-brand-600 focus:text-white active:bg-brand-600 active:text-white transition-transform duration-300"
               >
                 nous contacter
-              </Link>{" "}
+              </Link>
+              {/* Discord désactivé pour le moment
+              {" "}
               ou à{" "}
               <a
                 href={socialNetworkLinks.discord}
@@ -177,6 +179,7 @@ export default function Page() {
               >
                 rejoindre notre serveur Discord
               </a>
+              */}
               .
             </p>
           </section>

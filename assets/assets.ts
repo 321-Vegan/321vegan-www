@@ -389,7 +389,9 @@ export const faqData: FaqDataType[] = [
   {
     title: "Comment soutenir ou participer ?",
     description:
-      "321 Vegan est open-source : tout le monde peut contribuer sur GitHub, signaler des produits dans l’appli, rejoindre la communauté (Discord). Vous pouvez aussi faire une contribution financière sous forme d'abonnement soutien (à partir de 1&euro; par mois) ou de don ponctuel (buymeacoffee)",
+      // Version avec Discord (à remettre si on réactive le serveur) :
+      // "321 Vegan est open-source : tout le monde peut contribuer sur GitHub, signaler des produits dans l’appli, rejoindre la communauté (Discord). Vous pouvez aussi faire une contribution financière sous forme d'abonnement soutien (à partir de 1&euro; par mois) ou de don ponctuel (buymeacoffee)",
+      "321 Vegan est open-source : tout le monde peut contribuer sur GitHub ou signaler des produits dans l’appli. Vous pouvez aussi faire une contribution financière sous forme d'abonnement soutien (à partir de 1&euro; par mois) ou de don ponctuel (buymeacoffee)",
   },
   {
     title: "D’où vient l’appli ?",
