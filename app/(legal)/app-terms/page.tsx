@@ -249,7 +249,8 @@ export default function Page() {
                         reproduire, de les adapter (recadrage, redimensionnement)
                         et de les afficher dans l&apos;application et sur ses
                         supports de communication, aussi longtemps
-                        qu&apos;ils y restent publiés&nbsp;;
+                        qu&apos;ils y restent publiés, y compris après la
+                        suppression de votre compte&nbsp;;
                       </span>
                     </li>
                     <li className="flex gap-3">
@@ -260,8 +261,14 @@ export default function Page() {
                       <span>
                         <span className="font-semibold">Vos photos&nbsp;:</span>{" "}
                         vous garantissez en être l&apos;auteur&middot;ice ou
-                        disposer des droits nécessaires, et ne pas y montrer
-                        de personne reconnaissable sans son accord&nbsp;;
+                        disposer de l&apos;autorisation de leur
+                        auteur&middot;ice. Il est interdit d&apos;envoyer des
+                        photos trouvées sur Internet (Google Maps, réseaux
+                        sociaux, site de l&apos;établissement, autres
+                        guides…) sans l&apos;autorisation expresse de leur
+                        titulaire. Vous vous engagez également à ne pas y
+                        montrer de personne reconnaissable sans son
+                        accord&nbsp;;
                       </span>
                     </li>
                     <li className="flex gap-3">
@@ -306,7 +313,29 @@ export default function Page() {
                         publication. Une note sans commentaire ni photo est
                         publiée directement. Nous pouvons refuser ou retirer
                         à tout moment une contribution qui ne
-                        respecte pas les présentes conditions&nbsp;;
+                        respecte pas les présentes conditions. Cette
+                        vérification porte sur le respect des présentes
+                        règles&nbsp;: elle ne permet pas de savoir qui
+                        détient les droits sur une photo, ce qui reste sous
+                        votre responsabilité&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        <span className="font-semibold">
+                          Responsabilité&nbsp;:
+                        </span>{" "}
+                        vous êtes seul&middot;e responsable des contenus que
+                        vous publiez. Si un tiers met en cause {owner.name} à
+                        cause de l&apos;une de vos contributions, par exemple
+                        une photo dont vous ne détenez pas les droits, vous
+                        vous engagez à garantir {owner.name} de toute
+                        réclamation, dans la mesure où elle résulte du
+                        non-respect de vos engagements&nbsp;;
                       </span>
                     </li>
                     <li className="flex gap-3">
@@ -347,7 +376,78 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                8. Contenu et propriété intellectuelle
+                8. Signaler un contenu
+              </h3>
+              <div className="prose text-gray-600 mb-5 leading-relaxed">
+                <p>
+                  En tant qu&apos;hébergeur des contributions,{" "}
+                  <span className="font-bold text-nowrap">{owner.name}</span>{" "}
+                  n&apos;est pas responsable des contenus publiés par les
+                  utilisateur&middot;ice&middot;s tant que nous n&apos;avons
+                  pas connaissance de leur caractère illicite. Si une photo,
+                  un avis ou un autre contenu porte atteinte à vos droits
+                  (droit d&apos;auteur, droit à l&apos;image…) ou vous semble
+                  illicite, signalez-le-nous par e-mail en indiquant&nbsp;:
+                </p>
+                <div className="bg-gray-50 rounded-lg p-6 my-2">
+                  <ul className="space-y-4 text-gray-600 leading-relaxed">
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>vos nom et adresse e-mail&nbsp;;</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>le lieu et le contenu concernés&nbsp;;</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        les raisons pour lesquelles il devrait être retiré
+                        et, s&apos;il s&apos;agit de vos droits, ce qui en
+                        atteste&nbsp;;
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <Check
+                        className="size-6 text-blue-500 shrink-0"
+                        strokeWidth={1}
+                      />
+                      <span>
+                        une déclaration attestant que votre signalement est
+                        fait de bonne foi.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-gray-50 rounded-lg my-2 p-6 flex flex-col sm:flex-row items-center sm:justify-between">
+                  <p className="text-gray-600">Adresse de signalement&nbsp;:</p>
+                  <span className="inline-flex items-center text-blue-600 hover:text-blue-500">
+                    <Mail className="size-5 mr-1" strokeWidth={1} />
+                    <ObfuscateEmailAddress className="whitespace-nowrap" />
+                  </span>
+                </div>
+                <p>
+                  Nous examinons chaque signalement dans les meilleurs délais.
+                  Si un contenu est retiré, son auteur&middot;ice est
+                  informé&middot;e du motif et peut contester la décision par
+                  e-mail. Un signalement abusif engage la responsabilité de
+                  son auteur&middot;ice.
+                </p>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h3 className="text-xl font-semibold text-ink mb-4">
+                9. Contenu et propriété intellectuelle
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -365,7 +465,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                9. Limitation de responsabilité
+                10. Limitation de responsabilité
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -404,7 +504,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                10. Résiliation et suspension du compte
+                11. Résiliation et suspension du compte
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -427,7 +527,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                11. Dispositions spécifiques à l&apos;App Store (Apple)
+                12. Dispositions spécifiques à l&apos;App Store (Apple)
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -536,7 +636,7 @@ export default function Page() {
 
             <section className="mb-8">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                12. Droit applicable et juridiction compétente
+                13. Droit applicable et juridiction compétente
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -556,7 +656,7 @@ export default function Page() {
 
             <section className="mb-10">
               <h3 className="text-xl font-semibold text-ink mb-4">
-                13. Modification des conditions
+                14. Modification des conditions
               </h3>
               <div className="prose text-gray-600 mb-5 leading-relaxed">
                 <p>
@@ -744,6 +844,11 @@ export default function Page() {
                     </li>
                   </ul>
                 </div>
+                <p>
+                  Les métadonnées des photos que vous envoyez (position GPS,
+                  appareil, date de prise de vue) sont supprimées dès leur
+                  réception par nos serveurs, avant tout stockage.
+                </p>
                 <p>
                   Avec votre autorisation d&apos;accès à la localisation, que
                   vous ayez un compte ou non&nbsp;:
@@ -1064,7 +1169,7 @@ export default function Page() {
               <span className="italic">
                 Dernière mise à jour&nbsp;:
               </span>
-              <span>14 septembre 2026</span>
+              <span>13 novembre 2026</span>
             </p>
           </footer>
         </div>
